@@ -1,4 +1,4 @@
-#  Simran – UI/UX & Front-End Portfolio
+#  Simran – UI/UX & Front-End Designer
 
 Welcome to **SimmiDoodles** — the online portfolio of **Simran**, a talented UI/UX designer (5+ years experience), front-end developer, and digital artist showcasing a diverse range of projects.
 
