@@ -75,6 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+ window.addEventListener("scroll", function() {
+    const scrollArrow = document.querySelector(".scroll-down");
+    if (window.scrollY > 50) {
+      scrollArrow.classList.add("hidden");
+    } else {
+      scrollArrow.classList.remove("hidden");
+    }
+  });
+
 /* ───────────────────────────────────────────────────────────────
    (Optional) jQuery namespace from your original code
    ───────────────────────────────────────────────────────────────
@@ -84,3 +93,4 @@ document.addEventListener("DOMContentLoaded", () => {
     /* place any future jQuery code here */
   });
 })(jQuery);
+
