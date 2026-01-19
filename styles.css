@@ -741,7 +741,7 @@ nav ul li.dropdown:hover .dropdown-content {
 
 }
 .section-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px; /* smaller spacing under title */
   text-align: center;
   display: block;
@@ -1635,3 +1635,4 @@ nav ul li.dropdown:hover .dropdown-content {
 .project-card:hover img {
   transform: scale(1.12);
 }
+
