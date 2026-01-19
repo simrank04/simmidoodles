@@ -444,7 +444,7 @@ nav ul li a:hover::after {
 
 }
 .ag-format-container {
-  width: 1300px;
+  width: min(1200px, calc(100% - 2rem));
   margin: 0 auto;
 }
 
@@ -1536,6 +1536,7 @@ nav ul li a:hover::after {
   color: #777;
   margin-top: 10px;
 }
+
 
 
 
