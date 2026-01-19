@@ -2,7 +2,6 @@
 // Typed text animation
 // ───────────────────────────────────────────────────────────────
 const phrases = [
-  "a Front-End Designer.",
   "an UI/UX Designer.",
   "a Dog Lover.",
   "an Artist."
@@ -95,5 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     /* place any future jQuery code here */
   });
 })(jQuery);
+
 
 
