@@ -71,7 +71,7 @@ nav ul,
 nav a {
   text-decoration: none;
   color: var(--text-strong);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.1rem;
   position: relative;
   transition: color 0.2s ease;
