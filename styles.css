@@ -22,6 +22,52 @@
   --nav-bg: var(--surface);
 }
 
+.site-nav {
+  background: var(--surface);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* inner container centers nav content and limits width */
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, nav right */
+  gap: 1rem;
+  width: min(var(--container), calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+/* Ensure logo sits left and has reasonable height */
+.logo-link img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+/* push nav-links to the right in desktop mode */
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* ensure nav-toggle (hamburger) sits visually next to nav links and hides on desktop */
+.nav-toggle {
+  display: none; /* mobile shown via media query */
+  margin-left: 1rem;
+}
+
+/* On large screens, keep nav horizontal */
+@media (min-width: 769px) {
+  .nav-links { display: flex !important; flex-direction: row; }
+  .nav-toggle { display: none; }
+}
+
 * {
   margin: 0;
   padding: 0;
