@@ -1,9 +1,4 @@
-/* =========================
-   Simmidoodles - styles.css
-   Updated: mobile nav + UX fixes
-   ========================= */
 
-/* Reset & basics */
 :root {
   --bg: #fbf6fc;
   --surface: #ffffff;
@@ -22,44 +17,47 @@
   --nav-bg: var(--surface);
 }
 
-.site-nav {
-  background: var(--surface);
-  border-bottom: 1px solid rgba(0,0,0,0.04);
+..site-nav {
   position: sticky;
   top: 0;
+  background: var(--surface);
   z-index: 100;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-/* inner container centers nav content and limits width */
 .nav-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo left, nav right */
-  gap: 1rem;
-  width: min(var(--container), calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 0.5rem 0;
+  justify-content: space-between; /* logo left, links right */
 }
 
-/* Ensure logo sits left and has reasonable height */
+/* LOGO */
 .logo-link img {
-  display: block;
   height: 48px;
   width: auto;
+  display: block;
 }
 
-/* push nav-links to the right in desktop mode */
+/* NAV LINKS (desktop) */
 .nav-links {
-  margin-left: auto;
   display: flex;
-  gap: 1.5rem;
   align-items: center;
+  gap: 2rem;
+  margin-left: auto;
 }
 
-/* ensure nav-toggle (hamburger) sits visually next to nav links and hides on desktop */
+/* HAMBURGER hidden on desktop */
 .nav-toggle {
-  display: none; /* mobile shown via media query */
-  margin-left: 1rem;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--brand);
+  cursor: pointer;
 }
 
 /* On large screens, keep nav horizontal */
