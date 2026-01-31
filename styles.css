@@ -60,6 +60,13 @@ nav .logo {
   cursor: default;
  
 }
+
+/* Hide close button by default */
+.nav-close {
+  display: none;
+}
+
+
 nav ul,
 .nav-links {
   list-style: none;
@@ -72,7 +79,7 @@ nav a {
   text-decoration: none;
   color: var(--text-strong);
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   position: relative;
   transition: color 0.2s ease;
 }
@@ -135,7 +142,6 @@ nav ul li .dropdown-content a:hover {
 nav ul li.dropdown:hover .dropdown-content {
   display: flex;
 }
-
 
 
 /* Dog Animation*/ 
@@ -958,89 +964,109 @@ nav ul li.dropdown:hover .dropdown-content {
     100% { transform: translateX(0); }
 }
 
-/* Hamburger button - hidden on desktop */
+/* =========================
+   NAV BUTTONS
+========================= */
+
+/* Hamburger button (mobile only) */
 .nav-toggle {
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
   color: #a32ed1;
-  display: none;
+  display: none; /* hidden by default */
 }
 
-/* Close button inside mobile nav */
+/* Close button – hidden by default */
 .nav-close {
-  position: absolute;
-  top: 14px;
-  right: 18px;
+  display: none;
   background: none;
   border: none;
-  font-size: 1.2rem;
-  color: #a32ed1;
   cursor: pointer;
+  color: #a32ed1;
 }
 
-/* Responsive styles */
+/* =========================
+   MOBILE NAV
+========================= */
 @media (max-width: 768px) {
+
+  /* Show hamburger on mobile */
   .nav-toggle {
     display: block;
   }
-  
+
+  /* Mobile menu container */
   .nav-links {
     position: fixed;
-    top: 60px; /* below navbar */
+    top: 60px;
     right: 0;
-    background: white;
-    height: 280px;
     width: 200px;
+    background: #fff;
     border-radius: 25px;
     border: 2px solid #bd5ce4;
-    flex-direction: column;
-    gap: 0.5;
-    padding-top: 2rem;
     box-shadow: -2px 0 8px rgba(15, 4, 15, 0.1);
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 150;
   }
 
-
+  /* Menu open state */
   .nav-links.open {
     transform: translateX(0);
   }
-  
+
+  /* Show close button ONLY when menu is open */
+  .nav-links.open .nav-close {
+    display: block;
+  }
+
+  /* Close button positioning */
+  .nav-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.4rem;
+    z-index: 200;
+  }
+
+  /* Nav links styling */
   .nav-links li {
     width: 100%;
   }
-  
+
   .nav-links li a {
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #fff;
   }
-  
-  /* Dropdown content hidden by default on mobile */
-  .dropdown-content {
-    position: static;
-    box-shadow: none;
-    background: #fafafa;
-    border-radius: 0;
-    min-width: auto;
-    padding-left: 1rem;
-    display: none;
-  }
-  
-  /* Show dropdown content if parent has active class */
-  .dropdown.active > .dropdown-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Remove desktop hover dropdown on mobile */
+
+  /* Disable hover dropdown on mobile */
   .nav-links li.dropdown:hover > .dropdown-content {
     display: none;
   }
+
+  /* Mobile dropdown behavior */
+  .dropdown-content {
+    position: static;
+    background: #fafafa;
+    box-shadow: none;
+    display: none;
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  .dropdown.active > .dropdown-content {
+    display: flex;
+  }
 }
+
 
 /* === Portfolio Gallery - 2 per row === */
 .projects-gallery {
@@ -1608,12 +1634,8 @@ nav ul li.dropdown:hover .dropdown-content {
 
 
 
-
-
-
-
 /* ================================
- Typed text smaller + no wrap
+  Typed text smaller + no wrap
 ================================ */
 .typed-text, #typed, .auto-type {
   font-size: clamp(34px, 4vw, 56px);
@@ -1644,7 +1666,7 @@ Service buttons hover
 }
 
 /* ================================
- Project card images fit box
+Project card images fit box
 ================================ */
 .project-card .project-image,
 .project-card .thumb {
