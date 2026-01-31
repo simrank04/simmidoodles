@@ -1001,7 +1001,7 @@ nav ul li.dropdown:hover .dropdown-content {
   .nav-links li a {
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ffffff;
   }
   
   /* Dropdown content hidden by default on mobile */
