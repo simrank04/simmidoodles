@@ -396,7 +396,7 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 .hero-text {
   flex: 1 1 350px;
-  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-size: clamp(1.2rem, 2.6vw, 2rem);
   font-weight: 600;
   max-width: 700px;
   position: relative;
