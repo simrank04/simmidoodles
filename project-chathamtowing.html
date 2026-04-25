@@ -24,26 +24,30 @@
 </head>
 <body>
 
-  <nav>
-    <a href="index.html"><img src="imgs/logo.png" alt="Logo" width="120"></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-      <a href="#projects" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" > Projects</a>
-      <ul class="dropdown-content">
-        <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-        <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-        <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-        <li><a href="project-bitebook.html">Bitebook.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X.</a></li>
-      </ul>
-    </li>
-    <li><a href="contactme.html">Contact Me</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
+  <nav data-current="work">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     
-    <li><a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+        <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+        </ul>
+      </li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </ul>
   </nav>
   
 

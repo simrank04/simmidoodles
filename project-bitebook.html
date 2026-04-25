@@ -25,109 +25,176 @@
 </head>
 <body>
 
-  <nav>
-    <a href="index.html"><img src="imgs/logo.png" alt="Logo" width="120"></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-      <a href="#projects" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" > Projects</a>
-      <ul class="dropdown-content">
-        <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-        <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-        <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-        <li><a href="project-bitebook.html">Bitebook.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X.</a></li>
-      </ul>
-    </li>
-    <li><a href="contactme.html">Contact Me</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
+  <nav data-current="work">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     
-    <li><a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+     <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+          
+        </ul>
+      </li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </ul>
   </nav>
 
   <main class="project-detail-page">
-    <section class="project-detail">
-  <div class="project-content">
-    <div class="project-text">
-      <h2>Bitebook - Your Recipe Friend.</h2>
-      <p><strong>Project Type:</strong> Responsive Mobile Application.</p>
-      <p><strong>Role:</strong> UI/UX Designer, UX Researcher & Logo Design. </p>
-      <p><strong>Link to the Website:</strong>
-        <a href="https://www.figma.com/proto/tQ76WOcmy1Lw4CWMr8LEph/BiteBook-UI-UX-design?node-id=64-14965&t=P2w5d2liZ3siJbss-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=64%3A14965&show-proto-sidebar=1" target="_blank" target="_blank">
-            Bitebook Applicaiton.</a>
-      </p>
-    </div>
-    <div class="project-logo">
-      <img src="imgs/bitebook logo.png" alt="AAA Logo" width="350px" />
-    </div>
-  </div>
-</section>
-
-<section class="project-gallery">
-        <img src="imgs/bb5.png" align="center" width="650px" alt="bitebook mockup1"> 
-    
-      </section>
+    <section class="case-study-header">
+      <div class="case-study-content">
+        <p class="case-study-label">UX Case Study</p>
+        <h1 class="case-study-title">BiteBook</h1>
+        <p class="case-study-subtitle">Your Recipe Friend - a mobile application for discovering delicious recipes with advanced search and filtering capabilities.</p>
+        <div class="project-meta">
+          <div class="meta-item">
+            <span class="meta-label">Role:</span>
+            <span class="meta-value">UI/UX Designer, UX Researcher & Logo Design</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Project Type:</span>
+            <span class="meta-value">Responsive Mobile Application</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Link:</span>
+            <span class="meta-value"><a href="https://www.figma.com/proto/tQ76WOcmy1Lw4CWMr8LEph/BiteBook-UI-UX-design?node-id=64-14965&t=P2w5d2liZ3siJbss-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=64%3A14965&show-proto-sidebar=1" target="_blank">View BiteBook Prototype</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="case-study-visual">
+        <img src="imgs/bitebook logo.png" alt="BiteBook Logo" class="project-logo">
+      </div>
+    </section>
     
       <section class="project-description">
         
-      <h2>Project Overview</h2> <br>
-      <p>BiteBook is a mobile application that allows users to discover delicious recipes with filtering different Cuisines, Cooking Time, Reviews.
-            BiteBook stand out among the competitors as it has Voice & Scan and search feature.</p><br>
-            <p>
-                <li>User can Scan & voice search.</li>
-                <li>User can Watch recipe videos.</li>
-                <li>User can filter by cooking time.</li>
-                <li>User can Share recipe link with family/friends/social media.</li>
-            </p> <br>
-             
-      <h3>Tools & Tech Used</h3><br>
-     
-        Design & Research: Figma, Adobe Illustration, Procreate, Canva. <br><br>
+      <h2>Project Overview</h2>
+      
+      <div class="overview-section">
+        <div class="overview-item">
+          <div class="overview-icon">🍳</div>
+          <div class="overview-content">
+            <h3>The Product</h3>
+            <p>BiteBook is a comprehensive mobile application that revolutionizes how users discover and prepare recipes. The app features intelligent filtering by cuisine type, cooking time, and user reviews, complemented by innovative voice and image-based search capabilities. Users can watch recipe videos, track cooking progress, and easily share recipes with friends and family.</p>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <div class="overview-icon">⚠️</div>
+          <div class="overview-content">
+            <h3>The Problem</h3>
+            <p>Home cooks struggle with finding recipes that match their dietary preferences, available ingredients, and time constraints. Without a unified platform, users waste time browsing multiple sources, dealing with unclear instructions, and lack personalized recommendations based on their cooking skills and preferences.</p>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <div class="overview-icon">💡</div>
+          <div class="overview-content">
+            <h3>The Solution</h3>
+            <p>Designed BiteBook as an all-in-one recipe discovery platform featuring advanced filtering options, voice and image search, video tutorials, and social sharing. The intuitive interface guides users from recipe discovery to meal preparation, with time estimates and ingredient management streamlining the cooking process.</p>
+          </div>
+        </div>
+      </div>
+  <br>
+
+      <h2>Tools & Technologies</h2>
+      <div class="tech-stack">
+        <div class="tech-category">
+          <h4>Design & Research</h4>
+          <p>Figma, Adobe Illustrator, Procreate, Canva</p>
+        </div>
+        <div class="tech-category">
+          <h4>Prototyping</h4>
+          <p>Figma Prototyping, Interactive Flows</p>
+        </div>
+        <div class="tech-category">
+          <h4>Design System</h4>
+          <p>Typography, Color Palette, Icon Library, Component Library</p>
+        </div>
+      </div>
+  <br>
    
       
-      <h3>Low-Fidelity Mockup</h3><br>
-      <p>Creating basic layouts to visualize the structure and placement of elements on each screen.</p><br><br>
+      <h2>Low-Fidelity Wireframes</h2>
+      <p style="color: #666; margin-bottom: 20px;">Creating basic layouts to visualize the structure and placement of elements on each screen.</p>
+      <div class="project-gallery">
+        <img src="imgs/Low Fi Wireframe BB.png" alt="BiteBook Low-Fidelity Wireframe" class="gallery-image">
+      </div>
 
-      <img src="imgs/Low Fi Wireframe BB.png" align="center" width="950px" alt="AAA Screenshot 1"> <br><br><br>
-
-      <h3>High-Fidelity Mockups</h3>
-       <section class="project-gallery">
-
-        <p> 
-            <ul>
-            <li>Design System: Establish a consistent visual style, including color schemes, typography, icons, and button styles.</li>
-            <li>Screen Designs: Develop detailed mockups of each screen, ensuring visual consistency and alignment with the app’s branding.</li>
-            </ul>
-        </p>
-        <img src="imgs/bb1.png" align="center" width="650px" alt="bitebook mockup3"><br><br><br>
-        <img src="imgs/bb3.png" align="center" width="750px" alt="bitebook mockup4"><br><br><br>
-    
-      </section> <br>
+      <h2>High-Fidelity Design</h2>
+      <p style="color: #666; margin-bottom: 20px;">Final UI screens showcasing the complete visual design system and user experience.</p>
+      <div class="project-gallery bitebook-gallery">
+        <img src="imgs/bb1.png" alt="BiteBook High-Fidelity 1" class="gallery-image">
+        <img src="imgs/bb3.png" alt="BiteBook High-Fidelity 2" class="gallery-image">
+        <img src="imgs/bb5.png" alt="BiteBook High-Fidelity 3" class="gallery-image">
+      </div>
    
-      <h3>My Contribution</h3><br>
-      <ul>
-        <li>Analyzing competitor apps to identify strengths and weaknesses.</li>
-        <li>Low-Fi & High-Fi Wireframing and UI design in Figma from scratch.</li>
-        <li>Conducted user research and competitor analysis to identify target user needs and industry trends.</li>
-        <li>Created low-fidelity and high-fidelity wireframes in Figma, establishing a clear user flow and intuitive layout.</li>
-        <li>Designed the complete UI from scratch, aligning with the brand's visual identity and service ethos.</li>
-        <li>Designed a new logo and accompanying brand assets, including color palette, typography, and iconography.</li>
-      </ul>
+      <h2>My Contribution</h2>
+      <div class="contribution-pillars">
+        <div class="contribution-pillar research">
+          <div class="pillar-header">
+            <span class="pillar-icon">🔍</span>
+            <h3>Research & Strategy</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Analyzed competitor recipe apps to identify strengths, weaknesses, and market opportunities</li>
+            <li>Conducted user research to understand target user needs and cooking behaviors</li>
+            <li>Developed user personas and user journey mapping for recipe discovery</li>
+            <li>Created information architecture for intuitive recipe navigation and filtering</li>
+          </ul>
+        </div>
 
-      <a href="project-aaa.html" class="next-project-btn">Next Project →</a>
+        <div class="contribution-pillar design">
+          <div class="pillar-header">
+            <span class="pillar-icon">🎨</span>
+            <h3>UI/UX Design</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Designed complete visual identity and new logo for the brand</li>
+            <li>Created low-fidelity and high-fidelity wireframes in Figma from scratch</li>
+            <li>Developed comprehensive design system with typography, colors, and icons</li>
+            <li>Designed intuitive interfaces for recipe search, filtering, and preparation tracking</li>
+          </ul>
+        </div>
+
+        <div class="contribution-pillar features">
+          <div class="pillar-header">
+            <span class="pillar-icon">⚡</span>
+            <h3>Key Features Designed</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Voice and image-based recipe search functionality</li>
+            <li>Multi-criteria filtering by cuisine, cooking time, and reviews</li>
+            <li>Recipe video integration and tutorial player</li>
+            <li>Social sharing and recipe collection system</li>
+            <li>Ingredient management and cooking timer</li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="project-cozystowing.html" class="next-project-btn">Next Project →</a>
     </section>
 
     <aside class="project-overview">
       <h3>Other Projects</h3>
       <ul class="other-projects">
-        
-        <li><a href="project-aaa.html">AAA Enviromental Services-Spill Remediation Web App.</a></li>
-         <li><a href="project-buyerfolio.html">Buyerfolio- Homebuyers and Lenders Web/Mobile App.</a></li>
-         <li><a href="project-chathamtowing.html">Chatham Towing- Towing Responsive Website.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X- Track your fitness Journey.</a></li> 
-        
+        <li><a href="project-buyerfolio.html">Buyerfolio- Homebuyers and Lenders Web/Mobile App.</a></li>
+        <li><a href="project-dinespot.html">DineSpot- Meal Delivery Management.</a></li>
+        <li><a href="project-aaa.html">AAA Environmental-Spill Remediation Web App.</a></li>
+        <li><a href="project-fitnestx.html">Fitnest X- Track your fitness Journey.</a></li>
+        <li><a href="project-cozystowing.html">Cozy Towing- Storage Solutions Website.</a></li>
       </ul>
     </aside>
   </main>

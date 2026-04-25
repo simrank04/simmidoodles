@@ -25,110 +25,333 @@
 </head>
 <body>
 
-  <nav>
-    <a href="index.html"><img src="imgs/logo.png" alt="Logo" width="120"></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-      <a href="#projects" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" > Projects</a>
-      <ul class="dropdown-content">
-        <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-        <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-        <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-        <li><a href="project-bitebook.html">Bitebook.</a></li>
-        <li><a href="#project5">Fitnest X.</a></li>
-      </ul>
-    </li>
-    <li><a href="contactme.html">Contact Me</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
+  <nav data-current="work">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     
-    <li><a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+          <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+        </ul>
+      </li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </ul>
   </nav>
 
   <main class="project-detail-page">
-    <section class="project-detail">
-  <div class="project-content">
-    <div class="project-text">
-      <h2>FitnestX - Everybody can Train.</h2>
-      <p><strong>Project Type:</strong> Responsive Mobile Application.</p>
-      <p><strong>Role:</strong> UI/UX Designer, UX Researcher & Logo Design. </p>
-      <p><strong>Link to the Application:</strong>
-              <a href="https://www.figma.com/proto/VYwWkupO2UA3N3Iq8bVpMA/FitnestX?node-id=802-3980&p=f&t=0Z4PrKu77KyQ1nbK-1&scaling=scale-down&content-scaling=fixed&page-id=206%3A281&starting-point-node-id=802%3A3980&show-proto-sidebar=1" target="_blank" target="_blank">
-                  FitnestX.</a>
-        </p> <br>
-            
-    </div>
-    <div class="project-logo">
-      <img src="imgs/fitX logo.png" alt="AAA Logo" width="350px" />
-    </div>
-  </div>
-</section>
 
-<section class="project-gallery">
+    <section class="case-study-header">
+      <div class="case-study-content">
+        <p class="case-study-label">UX Case Study</p>
+        <h1 class="case-study-title">Fitnest X</h1>
+        <p class="case-study-subtitle">All-in-one fitness platform combining workout tracking, meal planning, and health monitoring in a single application.</p>
+        <div class="project-meta">
+          <div class="meta-item">
+            <span class="meta-label">Role:</span>
+            <span class="meta-value">UI/UX Designer & UX Researcher</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Project Type:</span>
+            <span class="meta-value">Responsive Mobile Application</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Link:</span>
+            <span class="meta-value"><a href="https://www.figma.com/proto/VYwWkupO2UA3N3Iq8bVpMA/FitnestX?node-id=802-3980&p=f&t=0Z4PrKu77KyQ1nbK-1&scaling=scale-down&content-scaling=fixed&page-id=206%3A281&starting-point-node-id=802%3A3980&show-proto-sidebar=1" target="_blank">View Fitnest X Prototype</a></span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Link:</span>
+            <span class="meta-value"><a href="https://www.figma.com/proto/VYwWkupO2UA3N3Iq8bVpMA/FitnestX?node-id=30-0&p=f&t=HESLTeV1taGomdCS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">View Complete Style Guide</a></span>
+          </div>
+
+        </div>
+      </div>
+      <div class="case-study-visual">
+        <img src="imgs/fitX logo.png" alt="Fitnest X Logo" class="project-logo">
+      </div>
+    </section>
+      <h2>Project Overview</h2>
+      
+      <div class="overview-section">
+        <div class="overview-item">
+          <div class="overview-icon">💪</div>
+          <div class="overview-content">
+            <h3>The Product</h3>
+            <p>Fitnest X is a comprehensive fitness platform that combines workout tracking, meal planning, sleep monitoring, and progress tracking into one unified application. Users can set personalized fitness goals, access guided workouts across multiple training types, and track their overall health journey in real-time.</p>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <div class="overview-icon">⚠️</div>
+          <div class="overview-content">
+            <h3>The Problem</h3>
+            <p>Fitness enthusiasts struggle with using multiple disconnected apps for different aspects of their health journey. Without a unified platform, users waste time switching between workout trackers, meal planners, and health monitors, leading to incomplete tracking and reduced accountability in achieving fitness goals.</p>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <div class="overview-icon">✨</div>
+          <div class="overview-content">
+            <h3>The Solution</h3>
+            <p>Designed Fitnest X as an all-in-one fitness ecosystem where users can set goals, track workouts by training type, monitor meals, track sleep patterns, and visualize progress through an intuitive interface. The app consolidates all fitness data in one place, reducing friction and improving user consistency.</p>
+          </div>
+        </div>
+      </div>
+  <br>
+
+      <h2>The Core Problem</h2>
+      <p style="color: #555; line-height: 1.8; margin-bottom: 25px;">Fitness enthusiasts face a fragmented app ecosystem where tracking workouts, nutrition, sleep, and progress requires juggling 3-5+ different applications. This app-switching friction creates incomplete health data, reduced accountability, and inconsistent tracking — ultimately derailing fitness goals.</p>
+      
+      <div class="pain-points-grid">
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">💪 User Pain</h4>
+          <p>Multiple disconnected apps create friction; users can't see their complete fitness picture or get personalized recommendations based on all health data</p>
+        </div>
         
-    <img src="imgs/fx2.png" align="center" width="250px" alt="AAA Screenshot 1">
-    <img src="imgs/fx1.png" align="center" width="350px" alt="AAA Screenshot 1"> 
-    <img src="imgs/fx3.png" align="center" width="350px" alt="AAA Screenshot 1">
-    
-      </section>
-    
-      <section class="project-description">
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">🎯 Motivation Pain</h4>
+          <p>Without unified tracking and clear progress visualization, users struggle to stay consistent and accountable to their fitness goals</p>
+        </div>
         
-      <h2>Project Overview</h2> <br>
-      <p>FitnestX is a Application that combine workout app, meal tracker app and health app in one so that users will no longer need to use separate apps to keep.
-        <br>Designed by Simran Kaur & was Designed as a Freelancing project.
-      </p><br>
-            <p>
-                <li>User can Set their Goals.</li>
-                <li>User can see Workout Tracker & Schedule Workout.</li>
-                <li>User can filter by type of Training.</li>
-                <li>User can Meal Plan, Track Sleep & Progress.</li>
-            </p> <br>
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">📱 Experience Gap</h4>
+          <p>No fitness app integrates workouts, meals, sleep, and analytics seamlessly with intuitive UX — each app has different logic and design patterns</p>
+        </div>
+      </div>
+  <br>
+
+      <h2>Design Process</h2>
+      <div class="design-process">
+        <div class="process-phase phase-empathize">
+          <div class="phase-name">Empathize</div>
+          <ul class="phase-items">
+            <li>User interviews</li>
+            <li>Fitness enthusiast surveys</li>
+            <li>Competitor app analysis</li>
+            <li>Pain point discovery</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-define">
+          <div class="phase-name">Define</div>
+          <ul class="phase-items">
+            <li>User personas</li>
+            <li>User journeys</li>
+            <li>Problem statements</li>
+            <li>HMW questions</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-ideate">
+          <div class="phase-name">Ideate</div>
+          <ul class="phase-items">
+            <li>Feature brainstorming</li>
+            <li>Information architecture</li>
+            <li>Dashboard design</li>
+            <li>Flow design</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-prototype">
+          <div class="phase-name">Prototype</div>
+          <ul class="phase-items">
+            <li>Low-fidelity wireframes</li>
+            <li>High-fidelity mockups</li>
+            <li>Interactive flows</li>
+            <li>Design system</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-test">
+          <div class="phase-name">Test</div>
+          <ul class="phase-items">
+            <li>Usability testing</li>
+            <li>User feedback</li>
+            <li>Iterative refinement</li>
+            <li>Final delivery</li>
+          </ul>
+        </div>
+      </div>
+  <br>
+
+      <h2>Research Insights</h2>
+      <ul class="research-insights-list">
+        <li>
+          <span class="insight-icon">🎯</span>
+          <div class="insight-content">
+            <strong>Goal-Oriented Motivation</strong>
+            <p>Users need clear goal-setting, progress tracking, and achievement milestones to stay motivated and consistent with fitness routines</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">📊</span>
+          <div class="insight-content">
+            <strong>Data Integration is Critical</strong>
+            <p>Fitness success depends on seeing connections between workouts, nutrition, and sleep — isolated metrics don't drive behavior change</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">⚡</span>
+          <div class="insight-content">
+            <strong>Simplicity Drives Adoption</strong>
+            <p>Users abandon apps with complex UX; intuitive data entry and automatic tracking reduce friction and improve long-term engagement</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">🏆</span>
+          <div class="insight-content">
+            <strong>Achievement Recognition Matters</strong>
+            <p>Celebrating progress through badges, streaks, and milestones significantly boosts motivation and app retention</p>
+          </div>
+        </li>
+      </ul>
+  <br>
+
+      <h2>Competitor Analysis</h2>
+      <div class="competitor-comparison">
+        <div class="comparison-table">
+          <div class="comparison-row header-row">
+            <div class="comparison-cell feature">Feature</div>
+            <div class="comparison-cell competitor">Workout<br/>Apps</div>
+            <div class="comparison-cell competitor">Nutrition<br/>Trackers</div>
+            <div class="comparison-cell competitor">Wearable<br/>Integration</div>
+            <div class="comparison-cell buyerfolio-cell">Fitnest X</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Workout Tracking</div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Meal Planning</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Sleep Monitoring</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Unified Dashboard</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Progress Analytics</div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Personalized Recommendations</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+        </div>
+      </div>
+  <br>
              
-      <h3>Tools & Tech Used</h3><br>
-     
-        Design & Research: Figma, Adobe Illustration, Procreate, Canva. <br><br>
+      <h2>Tools & Technologies</h2>
+      <div class="tech-stack">
+        <div class="tech-category">
+          <h4>Design & Research</h4>
+          <p>Figma, Adobe Illustrator, Procreate, Canva</p>
+        </div>
+        <div class="tech-category">
+          <h4>Prototyping</h4>
+          <p>Figma Prototyping, Interactive Flows</p>
+        </div>
+        <div class="tech-category">
+          <h4>Design System</h4>
+          <p>Typography, Color Palette, Icon Library, Component Library</p>
+        </div>
+      </div>
+  <br>
    
       
-      <h3>Low-Fidelity Mockup</h3><br>
-      <p>Creating basic layouts to visualize the structure and placement of elements on each screen.</p><br><br>
+      <h2>Design Exploration</h2><br>
+      <h3>High-Fidelity Design</h3>
+      <p style="color: #666; margin-bottom: 20px;">Final UI screens showcasing the complete visual design system and user experience.</p>
+        <div class="project-gallery fitnestx-gallery">
+        <img src="imgs/fx7.png" alt="Fitnest X Low-Fidelity 1" class="gallery-image">
+        <img src="imgs/fx8.png" alt="Fitnest X Low-Fidelity 2" class="gallery-image">
+        <img src="imgs/fx9.png" alt="Fitnest X Low-Fidelity 3" class="gallery-image">
+        <img src="imgs/fx4.png" alt="Fitnest X High-Fidelity 1" class="gallery-image">
+        <img src="imgs/fx5.png" alt="Fitnest X High-Fidelity 2" class="gallery-image">
+        <img src="imgs/fx6.png" alt="Fitnest X High-Fidelity 3" class="gallery-image">
+        <img src="imgs/fxcomponent.png" alt="Fitnest X Design System & Components" class="gallery-image">
+      </div>
 
-      <img src="imgs/fx7.png"  width="300px" alt="AAA Screenshot 1"> 
-      <img src="imgs/fx8.png" width="300px" alt="AAA Screenshot 1"> 
-      <img src="imgs/fx9.png" width="300px" alt="AAA Screenshot 1"><br><br><br>
+           <br>
+      <h2>My Contribution</h2>
+      <div class="contribution-pillars">
+        <div class="contribution-pillar research">
+          <div class="pillar-header">
+            <span class="pillar-icon">🔍</span>
+            <h3>Research & Strategy</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Analyzed competitor fitness apps to identify strengths, weaknesses, and market gaps</li>
+            <li>Conducted user research to identify target user needs and fitness industry trends</li>
+            <li>Developed user personas and fitness journey mapping</li>
+            <li>Created information architecture for seamless user flow</li>
+          </ul>
+        </div>
 
-      <h3>High-Fidelity Mockups</h3>
-       <section class="project-gallery">
+        <div class="contribution-pillar design">
+          <div class="pillar-header">
+            <span class="pillar-icon">🎨</span>
+            <h3>UI/UX Design</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Designed complete visual identity and new logo for the brand</li>
+            <li>Created low-fidelity and high-fidelity wireframes in Figma from scratch</li>
+            <li>Developed comprehensive design system with typography, colors, and icons</li>
+            <li>Designed intuitive interfaces for goal setting, workout tracking, and meal planning</li>
+          </ul>
+        </div>
 
-        <p> 
-            <ul>
-            <li>Design System: Establish a consistent visual style, including color schemes, typography, icons, and button styles.</li>
-            <li>Screen Designs: Develop detailed mockups of each screen, ensuring visual consistency and alignment with the app’s branding.</li>
-            </ul>
-        </p>
-        <img src="imgs/fx4.png" align="center" width="450px" alt="AAA Screenshot 2"> 
-        <img src="imgs/fx5.png" align="center" width="450px" alt="AAA Screenshot 2">
-        <img src="imgs/fx6.png" align="center" width="650px" alt="AAA Screenshot 1">
-        <img src="imgs/fxcomponent.png" align="center" width="950px" alt="AAA Screenshot 1">
-    
-      </section> <br>
-
-        <p><strong>Link to the Style Guide:</strong>
-              <a href="https://www.figma.com/proto/VYwWkupO2UA3N3Iq8bVpMA/FitnestX?node-id=30-0&p=f&t=HESLTeV1taGomdCS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" target="_blank">
-                  Style Guide.</a>
-        </p> <br>
-           
-      <h3>My Contribution</h3><br>
-      <ul>
-        <li>Analyzing competitor apps to identify strengths and weaknesses.</li>
-        <li>Low-Fi & High-Fi Wireframing and UI design in Figma from scratch.</li>
-        <li>Conducted user research and competitor analysis to identify target user needs and industry trends.</li>
-        <li>Created low-fidelity and high-fidelity wireframes in Figma, establishing a clear user flow and intuitive layout.</li>
-        <li>Designed the complete UI from scratch, aligning with the brand's visual identity and service ethos.</li>
-        <li>Designed a new logo and accompanying brand assets, including color palette, typography, and iconography.</li>
-      </ul>
+        <div class="contribution-pillar features">
+          <div class="pillar-header">
+            <span class="pillar-icon">✨</span>
+            <h3>Key Features Designed</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Goal setting and progress tracking dashboard</li>
+            <li>Workout scheduler with training type filters</li>
+            <li>Meal planning and nutrition tracking system</li>
+            <li>Sleep monitoring and health metrics</li>
+            <li>Real-time progress visualization and analytics</li>
+          </ul>
+        </div>
+      </div>
+  <br>
 
       <a href="project-bitebook.html" class="next-project-btn">Next Project →</a>
     </section>
@@ -136,12 +359,11 @@
     <aside class="project-overview">
       <h3>Other Projects</h3>
       <ul class="other-projects">
-        
-        <li><a href="project-aaa.html">AAA Enviromental Services-Spill Remediation Web App.</a></li>
-         <li><a href="project-buyerfolio.html">Buyerfolio- Homebuyers and Lenders Web/Mobile App.</a></li>
-         <li><a href="project-chathamtowing.html">Chatham Towing- Towing Responsive Website.</a></li>
-        <li><a href="project-bitebook.html">Fitnest X- Track your fitness Journey.</a></li> 
-        
+        <li><a href="project-buyerfolio.html">Buyerfolio- Homebuyers and Lenders Web/Mobile App.</a></li>
+        <li><a href="project-dinespot.html">DineSpot- Meal Delivery Management.</a></li>
+        <li><a href="project-aaa.html">AAA Environmental-Spill Remediation Web App.</a></li>
+        <li><a href="project-bitebook.html">BiteBook – Recipe App.</a></li>
+        <li><a href="project-cozystowing.html">Cozy Towing- Storage Solutions Website.</a></li>
       </ul>
     </aside>
   </main>

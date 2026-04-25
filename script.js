@@ -3,6 +3,7 @@
 --------------------------- */
 const phrases = [
   "an UI/UX Designer.",
+  "an Front-End Developer.",
   "a Dog Lover.",
   "an Artist."
 ];
@@ -14,9 +15,9 @@ let currentPhrase = "";
 let isDeleting = false;
 
 const SPEED_TYPE = 100;
-const SPEED_PAUSE_END = 1100;
-const SPEED_DELETE = 50;
-const SPEED_PAUSE_BETWEEN = 500;
+const SPEED_PAUSE_END = 1000;
+const SPEED_DELETE = 60;
+const SPEED_PAUSE_BETWEEN = 600;
 
 function type() {
   if (!typedTextSpan) return;
@@ -155,6 +156,76 @@ function setupMobileNav({ breakpoint = 700 } = {}) {
 }
 
 /* ---------------------------
+   Mobile Work Dropdown Toggle
+--------------------------- */
+function setupMobileWorkDropdown({ breakpoint = 700 } = {}) {
+  const workDropdown = document.querySelector(".work-dropdown");
+  const workLink = document.querySelector(".work-link");
+  const dropdownMenu = workDropdown?.querySelector(".dropdown-menu");
+
+  if (!workDropdown || !workLink || !dropdownMenu) return;
+
+  workLink.addEventListener("click", (e) => {
+    // Only toggle on mobile
+    if (window.innerWidth < breakpoint) {
+      e.preventDefault();
+      workDropdown.classList.toggle("active");
+    }
+  });
+
+  // Close dropdown when clicking a project link
+  dropdownMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      workDropdown.classList.remove("active");
+    });
+  });
+
+  // Reset on resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= breakpoint) {
+      workDropdown.classList.remove("active");
+    }
+  });
+}
+
+/* ---------------------------
+   Logo Modal
+--------------------------- */
+function setupLogoModal() {
+  const modal = document.getElementById('logoModal');
+  const modalImg = document.getElementById('modalImg');
+  const closeBtn = document.querySelector('.close');
+  const logoItems = document.querySelectorAll('.logo-item img');
+
+  if (!modal || !modalImg || !closeBtn || !logoItems.length) return;
+
+  logoItems.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+      modal.style.display = 'none';
+    }
+  });
+}
+
+/* ---------------------------
    Boot
 --------------------------- */
 onDOM(() => {
@@ -162,4 +233,6 @@ onDOM(() => {
   ensureBackToTop();
   setupScrollArrowFade();
   setupMobileNav({ breakpoint: 700 });
+  setupMobileWorkDropdown({ breakpoint: 700 });
+  setupLogoModal();
 });

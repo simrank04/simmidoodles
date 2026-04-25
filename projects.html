@@ -24,119 +24,152 @@
 </head>
 <body>
 
-  <nav>
+  <nav data-current="about">
     <a href="index.html">
-      <img src="imgs/logo.png" alt="logo" width="120">
+      <img src="imgs/logo.png" alt="logo" width="40">
     </a>
 
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    
     <ul class="nav-links">
-      <li class="dropdown">
-        <a href="projects.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> Projects</a>
-        <ul class="dropdown-content">
-          <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-          <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-          <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-          <li><a href="project-bitebook.html">Bitebook.</a></li>
-          <li><a href="project-fitnestx.html">Fitnest X.</a></li>
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+        <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
         </ul>
       </li>
-      <li><a href="contactme.html">Contact Me</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="Resume-Simran Kaur.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
     </ul>
   </nav>
 
-  <main>
-    <section class="projects" id="projects">
-  <h1 class="section-title">Featured Projects :</h1>
-
-  <div class="project-card">
-    <div class="project-info">
-      
-      <h2>AAA Enviromental Inc.</h2>
-      <span class="tag">Spill Remediation Web App</span>
-      <p>UI/UX Design | Design System | Interaction | Web & Mobile App Design</p>
-      <a href="project-aaa.html" class="btn">View Case Study</a>
+<main class="about-section">
+    <div class="about-hero">
+      <div class="about-intro">
+        <h1>About Me</h1>
+        <h2>Hi! I'm Simran </h2>
+        <p>A Toronto-based UI/UX & Front-End Designer, self-taught artist, and lover of all things creative. I turn ideas into digital experiences that look good, feel right, and get results.</p>
+      </div>
     </div>
-    <div class="project-image">
-      <img src="imgs/aaa mockup.png" alt="AAA Enviromental Inc">
+
+    <div class="about-highlights">
+      <div class="highlight-card">
+        <div class="highlight-icon">💡</div>
+        <h3>Design with Impact</h3>
+        <p>5+ years crafting intuitive, user-friendly interfaces that actually work and look amazing.</p>
+      </div>
+      
+      <div class="highlight-card">
+        <div class="highlight-icon">🎨</div>
+        <h3>Creativity Meets Code</h3>
+        <p>Figma, Adobe Suite, Canva, HTML, CSS, JavaScript, React.js, Vue.js—I make it all shine.</p>
+      </div>
+      
+      <div class="highlight-card">
+        <div class="highlight-icon">🚀</div>
+        <h3>Big-Picture Thinker</h3>
+        <p>From Design Thinking to performance optimization and SEO, creating experiences users love.</p>
+      </div>
+      
+      <div class="highlight-card">
+        <div class="highlight-icon">🌅</div>
+        <h3>Creative Spirit</h3>
+        <p>Painting, photography, chasing sunsets, and hanging out with my dog fuel my creativity.</p>
+      </div>
     </div>
-  </div>  
 
-   <div class="project-card">
-    <div class="project-info">
-      
-      <h2>Buyerfolio.</h2>
-      <span class="tag">Homebuyers and Lenders Web App</span>
-      <p>UI/UX Design | Design System | Responsive Web & Mobile App Design</p>
-      <a href="project-buyerfolio.html" class="btn">View Case Study</a>
-      </div>
-      <div class="project-image">
-        <img src="imgs/buyerfolio mockup.png" alt="Buyerfolio">
-      </div>
-  </div>
-  
-  <div class="project-card">
-    <div class="project-info">
-      
-      <h2>Chatham Towing.</h2>
-      <span class="tag">Towing Responsive Website.</span>
-      <p>UX Design | UI Design | Responsive Website Design</p>
-      <a href="project-chathamtowing.html" class="btn">View Case Study</a>
-      </div>
-        <div class="project-image">
-          <img src="imgs/chatham mockup.png" alt="Chatham Towing">
+    <div class="about-skills">
+      <h2>My Skillset</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Design</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">Illustrator</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Canva</span>
+          </div>
         </div>
-      </div> 
-
-<div class="project-card">
-    <div class="project-info">
-      
-      <h2>Bitebook.</h2>
-      <span class="tag">Allows users to discover delicious Recipes.</span>
-      <p>UX Design | UI Design | Responsive Mobile App Design</p>
-      <a href="project-bitebook.html" class="btn">View Case Study</a>
-      </div>
-        <div class="project-image">
-          <img src="imgs/bitebook mockup.png" alt="Bitebook">
+        
+        <div class="skill-category">
+          <h4>Development</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
         </div>
-      </div> 
-
-      <div class="project-card">
-    <div class="project-info">
-      
-      <h2>Fitnest X.</h2>
-      <span class="tag">Track your fitness Journey.</span>
-      <p>UX Design | UI Design | Interaction | Mobile App Design</p>
-      <a href="project-fitnestx.html" class="btn">View Case Study</a>
-      </div>
-        <div class="project-image">
-          <img src="imgs/fitnestx mockup.png" alt="fitnestx ">
+        
+        <div class="skill-category">
+          <h4>Strategy</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Design Thinking</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">Performance</span>
+          </div>
         </div>
-      </div> 
-</section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-links">
-        <a href="projects.html" class="active">Projects</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="letsconnect.html">Contact Me</a>
-        <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
       </div>
+    </div>
+
+    <div class="about-cta">
+      <h2>Let's Create Together</h2>
+      <p>I'm always excited to work on new projects and collaborate with creative minds. Let's connect!</p>
       <div class="footer-social">
-        <h3>Let's get Connected</h3>
-        <a href="https://www.behance.net/simrankaur92" target="_blank"><i class="fab fa-behance"></i></a>
-        <a href="https://www.linkedin.com/in/simran-kaur04/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="mailto:simranpreet094@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.behance.net/simrankaur92" target="_blank" aria-label="Behance">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/simran-kaur04/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:simranpreet094@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
     </div>
-    <p class="footer-copy">© 2025 <strong>simmidoodles</strong>. All rights reserved.</p>
-  </footer>
+</main>
 
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <br> 
+      <a href="index.html#projects">Projects</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="#contact">Contact Me</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </div>
+    <div class="footer-social">
+    <br>
+      <a href="https://www.behance.net/simrankaur92" target="_blank" aria-label="Behance">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/simran-kaur04/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:simranpreet094@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 <strong>simmidoodles</strong>. All rights reserved.</p>
+</footer>
+
+<!-- backToTop -->
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>

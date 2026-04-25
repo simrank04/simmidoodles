@@ -1,0 +1,241 @@
+/* About Section Styling */
+
+.about-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f5f5ff;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-intro h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 0.5rem;
+  color: var(--text-strong);
+  font-weight: 700;
+}
+
+.about-intro h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.about-intro p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Highlights Cards */
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.highlight-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(163, 46, 209, 0.15);
+}
+
+.highlight-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.highlight-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-strong);
+}
+
+.highlight-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Skills Section */
+.about-skills {
+  margin-bottom: 4rem;
+}
+
+.about-skills h2 {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 2.5rem;
+  color: var(--text-strong);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.skill-category {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.skill-category h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--brand);
+  border-bottom: 2px solid #ffce7b;
+  padding-bottom: 0.75rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #f5f5ff 0%, #fbf6fc 100%);
+  border: 1.5px solid rgba(163, 46, 209, 0.2);
+  color: var(--text-strong);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: var(--brand);
+  color: white;
+  border-color: var(--brand);
+  transform: translateY(-2px);
+}
+
+/* CTA Section */
+.about-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f5f5ff 0%, #fbf6fc 100%);
+  border-radius: var(--radius);
+  border: 2px solid rgba(163, 46, 209, 0.2);
+}
+
+.about-cta h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: var(--text-strong);
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.about-cta .footer-social {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.about-cta .footer-social a {
+  font-size: 1.8rem;
+  color: var(--brand);
+  transition: all 0.3s ease;
+}
+
+.about-cta .footer-social a:hover {
+  color: #6a1b8a;
+  transform: scale(1.2) translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-intro h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  .about-intro p {
+    font-size: 1rem;
+  }
+
+  .about-highlights {
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .highlight-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .highlight-icon {
+    font-size: 2.5rem;
+  }
+
+  .about-skills h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-grid {
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+  }
+
+  .about-cta {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-tag {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}

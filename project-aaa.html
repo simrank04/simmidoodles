@@ -24,96 +24,176 @@
 </head>
 <body>
 
-  <nav>
-    <a href="index.html"><img src="imgs/logo.png" alt="Logo" width="120"></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-      <a href="#projects" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" > Projects</a>
-      <ul class="dropdown-content">
-        <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-        <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-        <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-        <li><a href="project-bitebook.html">Bitebook.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X.</a></li>
-      </ul>
-    </li>
-    <li><a href="contactme.html">Contact Me</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
+  <nav data-current="work">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     
-    <li><a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+        <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+          
+        </ul>
+      </li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </ul>
   </nav>
   
 
   <main class="project-detail-page">
-    <section class="project-detail">
-  <div class="project-content">
-    <div class="project-text">
-      <h2>AAA Environmental Services Inc</h2>
-      <p><strong>Project Type:</strong> Static Responsive Website.</p>
-      <p><strong>Role:</strong> UI/UX Designer, UX Researcher, Logo Design & Front-End Developer.</p>
-      <p><strong>Link to the Website:</strong>
-        <a href="https://itutfs.github.io/aaaenviromentalservicesinc/" target="_blank">AAA Environmental Services Inc</a>
-      </p>
-    </div>
-    <div class="project-logo">
-      <img src="imgs/aaa logo.png" alt="AAA Logo" />
-    </div>
-  </div>
-</section>
 
-      <section class="project-gallery">
-        <img src="imgs/aaa mobile mockup2.png" align="center" alt="AAA Screenshot 1">
+    <section class="case-study-header">
+      <div class="case-study-content">
+        <p class="case-study-label">UX Case Study</p>
+        <h1 class="case-study-title">AAA Environmental</h1>
+        <p class="case-study-subtitle">Professional cleanup and remediation services website designed to build trust and drive client engagement.</p>
+        <div class="project-meta">
+          <div class="meta-item">
+            <span class="meta-label">Role:</span>
+            <span class="meta-value">UI/UX Designer, UX Researcher & Front-End Developer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Project Type:</span>
+            <span class="meta-value">Static Responsive Website</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Link:</span>
+            <span class="meta-value"><a href="https://itutfs.github.io/aaaenviromentalservicesinc/" target="_blank">Visit AAA Environmental</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="case-study-visual">
+        <img src="imgs/aaa logo.png" alt="AAA Environmental Logo" class="project-logo">
+      </div>
+    </section>
     
-      </section>
-    
-      <section class="project-description">
-      <h2>Project Overview</h2> <br>
-      <p>This project involved the end-to-end design and front-end development of a static, responsive website for AAA Environmental Services Inc., a company specializing in professional cleanup and remediation services. 
-        The goal was to create a modern, clean, and user-friendly website that effectively communicates the company’s services, builds trust, and enhances online presence.</p>
-<br>
-      <h3>Tools & Tech Used</h3><br>
-      <ul>
-        <li><strong>Design & Research: </strong> Figma, Adobe Illustration, Procreate, Canva.</li>
-        <li><strong>Development :</strong> HTML5, CSS3, JavaScript, Bootstrap.</li>
-        <li><strong>Code Editor :</strong> Visual Studio Code.</li><br>
-      </ul>
+    <section class="project-description">
+      <h2>Project Overview</h2>
       
-      <h3>Low-Fidelity Images</h3><br>
+      <div class="overview-section">
+        <div class="overview-item">
+          <div class="overview-icon">🧹</div>
+          <div class="overview-content">
+            <h3>The Service</h3>
+            <p>AAA Environmental Services Inc. specializes in professional cleanup and remediation services. The project involved creating a comprehensive, modern website that effectively communicates the company's expertise and builds trust with potential clients.</p>
+          </div>
+        </div>
 
-      <img src="imgs/aaa lofi.png" align="center" width="950px" alt="AAA Screenshot 1"> <br><br><br>
+        <div class="overview-item">
+          <div class="overview-icon">⚠️</div>
+          <div class="overview-content">
+            <h3>The Problem</h3>
+            <p>The company lacked a strong online presence to communicate service expertise, establish credibility, and generate client inquiries. Without a professional website, they were missing opportunities to reach customers and differentiate from competitors in the remediation industry.</p>
+          </div>
+        </div>
 
-      <h3>High-Fidelity Images</h3>
-       <section class="project-gallery">
-        <img src="imgs/aaaenviro.png" align="center" width="950px" alt="AAA Screenshot 1"><br><br><br>
-        <img src="imgs/aaaenviro2.png" align="center" width="950px" alt="AAA Screenshot 2"><br><br><br>
-        <img src="imgs/aaaenviro3.png" align="center" width="950px" alt="AAA Screenshot 3">
-    
-      </section> <br>
-   
-      <h3>My Contribution</h3><br>
-      <ul>
-        <li>Conducted user research and competitor analysis to identify target user needs and industry trends.</li>
-        <li>Created low-fidelity and high-fidelity wireframes in Figma, establishing a clear user flow and intuitive layout.</li>
-        <li>Designed the complete UI from scratch, aligning with the brand's visual identity and service ethos.</li>
-        <li>Developed the responsive front-end using clean HTML, CSS, JavaScript, and Bootstrap, ensuring cross-device compatibility.</li>
-        <li>Designed a new logo and accompanying brand assets, including color palette, typography, and iconography.</li>
-      </ul>
+        <div class="overview-item">
+          <div class="overview-icon">✨</div>
+          <div class="overview-content">
+            <h3>The Solution</h3>
+            <p>Designed and developed a clean, responsive website with intuitive navigation, compelling service descriptions, trust-building testimonials, and a professional brand identity. The site includes case studies showcasing past projects and a clear call-to-action for client inquiries.</p>
+          </div>
+        </div>
+      </div>
+  <br>
+      <h2>Tools & Technologies</h2>
+      <div class="tech-stack">
+        <div class="tech-category">
+          <h4>Design & Research</h4>
+          <p>Figma, Adobe Illustrator, Procreate, Canva</p>
+        </div>
+        <div class="tech-category">
+          <h4>Development</h4>
+          <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+        </div>
+        <div class="tech-category">
+          <h4>Tools</h4>
+          <p>Visual Studio Code, Git, Chrome DevTools</p>
+        </div>
+      </div>
+  <br>
 
-      <a href="project-buyerfolio.html" class="next-project-btn">Next Project →</a>
+      <h2>My Contribution</h2>
+      <div class="contribution-pillars">
+        <div class="contribution-pillar research">
+          <div class="pillar-header">
+            <span class="pillar-icon">🔍</span>
+            <h3>Research & Strategy</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Conducted user research and competitor analysis to identify target user needs</li>
+            <li>Analyzed industry trends and best practices in the remediation sector</li>
+            <li>Developed user personas and customer journey maps</li>
+            <li>Created information architecture for optimal user flow</li>
+          </ul>
+        </div>
+
+        <div class="contribution-pillar design">
+          <div class="pillar-header">
+            <span class="pillar-icon">🎨</span>
+            <h3>Design & Branding</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Designed complete visual identity including new logo and brand assets</li>
+            <li>Created low-fidelity and high-fidelity wireframes in Figma</li>
+            <li>Developed comprehensive UI design system with color palette and typography</li>
+            <li>Designed responsive layouts for all device sizes</li>
+          </ul>
+        </div>
+
+        <div class="contribution-pillar development">
+          <div class="pillar-header">
+            <span class="pillar-icon">⚙️</span>
+            <h3>Front-End Development</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Built responsive front-end using clean HTML5, CSS3, and JavaScript</li>
+            <li>Implemented Bootstrap framework for cross-device compatibility</li>
+            <li>Optimized site performance and mobile responsiveness</li>
+            <li>Ensured accessibility and web standards compliance</li>
+          </ul>
+        </div>
+      </div>
+  <br>
+
+      <h2>Project Showcase</h2>
+      <p style="color: #666; margin-bottom: 20px;">Low-fidelity wireframes establishing user flows and information hierarchy before visual design.</p>
+      <div class="project-gallery">
+        <img src="imgs/aaa lofi.png" alt="AAA Environmental Low-Fidelity Wireframes" class="gallery-image"><br>
+      </div>
+
+      <h2>High-Fidelity Design</h2>
+      <p style="color: #666; margin-bottom: 20px;">Final UI screens showcasing the complete visual design system and user experience.</p>
+      <div class="project-gallery">
+        <img src="imgs/aaaenviro.png" alt="AAA Environmental Design 1" class="gallery-image"><br>
+        <img src="imgs/aaaenviro2.png" alt="AAA Environmental Design 2" class="gallery-image"><br>
+        <img src="imgs/aaaenviro3.png" alt="AAA Environmental Design 3" class="gallery-image">
+      </div>
+  <br>
+
+      <a href="project-fitnestx.html" class="next-project-btn">Next Project →</a>
     </section>
 
     <aside class="project-overview">
       <h3>Other Projects</h3>
       <ul class="other-projects">
-        
-         <li><a href="project-buyerfolio.html">Buyerfolio- Homebuyers and Lenders Web/Mobile App.</a></li>
-         <li><a href="project-chathamtowing.html">Chatham Towing- Towing Responsive Website.</a></li>
+        <li><a href="project-buyerfolio.html">Buyerfolio- Homebuyers and Lenders Web/Mobile App.</a></li>
+        <li><a href="project-dinespot.html">DineSpot- Meal Delivery Management.</a></li>
         <li><a href="project-bitebook.html">BiteBook – Recipe App.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X- Track your fitness Journey.</a></li> 
-        
+        <li><a href="project-fitnestx.html">Fitnest X- Track your fitness Journey.</a></li>
+        <li><a href="project-cozystowing.html">Cozy Towing- Storage Solutions Website.</a></li>
       </ul>
     </aside>
   </main>

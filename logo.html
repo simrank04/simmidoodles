@@ -16,24 +16,30 @@
 </head>
 <body>
 
-  <nav>
-    <a href="index.html"><img src="imgs/logo.png" alt="Logo" width="120"></a>
+  <nav data-current="logo">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
+
     <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-        <a href="projects.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> Projects</a>
-        <ul class="dropdown-content">
-          <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-          <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-          <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-          <li><a href="project-bitebook.html">Bitebook.</a></li>
-          <li><a href="project-fitnestx.html">Fitnest X.</a></li>
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+         <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+          
         </ul>
       </li>
-      <li><a href="contactme.html">Contact Me</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="Resume-Simran Kaur.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
     </ul>
   </nav>
 
@@ -43,24 +49,51 @@
       <p>A selection of my recent works</p>
     </header>
 
-    <section class="carousel" aria-label="Artwork carousel">
-      <div class="slides">
-        <img src="imgs/aaa logo.png" alt="logo 2">
-        <img src="imgs/aaa business card.png" alt="logo 2">
-        <img src="imgs/bitebook .png" alt="bitebook">
-        <img src="imgs/chatham logo1.png" alt="logo 2">
-        <img src="imgs/Chatham business card.png" alt="logo 2">
-        <img src="imgs/A Photography1.png" alt="logo 2">
-        <img src="imgs/A Photography 2.png" alt="logo 3">
-        <img src="imgs/Law 1.png" alt="logo 4">
-        <img src="imgs/Law 2.png" alt="logo 5">
-        <img src="imgs/Law 3.png" alt="logo 6">
-        <img src="imgs/Yoga Studio Logo.png" alt="logo 1">
-
+    <section class="logo-gallery" aria-label="Logo designs gallery">
+      <div class="logo-grid">
+        <div class="logo-item">
+          <img src="imgs/aaa logo.png" alt="AAA Environmental Logo">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/aaa business card.png" alt="AAA Environmental Business Card">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/bitebook .png" alt="Bitebook Logo">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/chatham logo1.png" alt="Chatham Towing Logo">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/Chatham business card.png" alt="Chatham Towing Business Card">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/A Photography1.png" alt="A Photography Logo 1">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/A Photography 2.png" alt="A Photography Logo 2">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/Law 1.png" alt="Law Logo 1">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/Law 2.png" alt="Law Logo 2">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/Law 3.png" alt="Law Logo 3">
+        </div>
+        <div class="logo-item">
+          <img src="imgs/Yoga Studio Logo.png" alt="Yoga Studio Logo">
+        </div>
       </div>
     </section>
 
   </main>
+
+  <!-- Modal for logo viewing -->
+  <div id="logoModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
 
   <footer class="footer">
     <div class="footer-container">

@@ -26,42 +26,41 @@
 </head>
 <body>
 
-  <nav>
+  <nav data-current="index">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
 
-  <a href="index.html">
-    <img src="imgs/logo.png" alt="logo" width="120">
-  </a>
-
-  <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-  
-  <ul class="nav-links">
-     <button class="nav-close" aria-label="Close menu">✕</button> 
-    <li class="dropdown">
-      <a href="#projects" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" > Projects</a>
-      <ul class="dropdown-content">
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     
-        <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-        <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-        <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-		  <li><a href="project-bitebook.html">Bitebook.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X.</a></li>
-      
-      </ul>
-    </li>
-    <li><a href="contactme.html">Contact Me</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
-    
-    <li><a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a></li>
-    
-  </ul>
-  
-</nav>
+    <ul class="nav-links">
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="#projects" class="work-link">Work</a>
+        <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          
+        </ul>
+      </li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </ul>
+  </nav>
 
 
 
   <section class="hero" id="home">
     <div class="hero-text">
       <h1>Hi! I'm Simran and <br>I am <span class="typed-text"></span></h1>
+      <div class="hero-actions">
+       
+      </div>
     </div>
 
     <div class="hero-visual">
@@ -97,45 +96,142 @@
   </section>
 
   <section id="ag-offer">
-    <h2>With 5+ Years of Experience I provide services in :</h2>
+    <h2>With 5+ Years of Experience I provide:</h2>
     <div class="service-buttons" aria-label="Services">
-      <a class="service-btn" href="projects.html">UI/UX Design</a>
-      <a class="service-btn" href="logo.html">Logo Design</a>
-      <a class="service-btn" href="art.html">Digital Art &amp; Illustration</a>
+      <div class="service-card">
+        <a href="projects.html">
+          <i class="fas fa-palette"></i>
+          <h3>UI/UX Design</h3>
+          <p>Creating intuitive and beautiful user interfaces for web and mobile applications</p>
+        </a>
+      </div>
+      <div class="service-card">
+        <a href="logo.html">
+          <i class="fas fa-pen-fancy"></i>
+          <h3>Logo & Branding</h3>
+          <p>Crafting memorable identities and visual systems that reflect your brand essence</p>
+        </a>
+      </div>
+      <div class="service-card">
+        <a href="art.html">
+          <i class="fas fa-image"></i>
+          <h3>Digital Art & Illustration</h3>
+          <p>Original artwork and illustrations that bring creativity and personality to your projects</p>
+        </a>
+      </div>
     </div>
 </section>
 
 <section class="projects" id="projects">
-  <h1 class="section-title">Featured Projects :</h1><br>
+  <h1 class="section-title">Featured Projects</h1>
 
-  <div class="projects-gallery">
- 
-    <a href="project-buyerfolio.html" class="project-item">
-      <img src="imgs/buyerfolio mockup.png" alt="Buyerfolio">
-      <div class="overlay">Buyerfolio - Homebuyers Web/Mobile App.</div>
-    </a>
-	  
-    <a href="project-chathamtowing.html" class="project-item">
-      <img src="imgs/chatham mockup.png" alt="Chatham Towing">
-      <div class="overlay">Chatham Towing - Towing Responsive Website.</div>
-    </a>
-	  
-	<a href="project-bitebook.html" class="project-item">
-      <img src="imgs/bitebook mockup.png" alt="Bitebook">
-      <div class="overlay">Bitebook - Your Recipe Friend.
+  <div class="projects-container">
+    
+    <!-- Buyerfolio Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Buyerfolio</h2>
+        <br><p class="project-role">UI/UX Designer • Web & Mobile App</p>
+        <p class="project-description">A comprehensive homebuying platform designed to simplify the journey for first-time homebuyers. Created an intuitive interface that helps users research properties, compare financing options, and track mortgage progress in one centralized dashboard.</p>
+        <div class="project-links">
+          <a href="project-buyerfolio.html" class="project-link">View Case Study</a>
+        </div>
       </div>
-    </a>
-	    <a href="project-aaa.html" class="project-item">
-      <img src="imgs/aaa mockup.png" alt="AAA Environmental Inc.">
-      <div class="overlay">AAA Environmental - Spill Remediation Web App.</div>
-    </a>
-    <a href="project-fitnestx.html" class="project-item">
-      <img src="imgs/fitnestx mockup.png" alt="Fitnest X">
-      <div class="overlay">Fitnest X - Track your fitness Journey.</div>
-    </a>
-	  
+      <div class="project-visual">
+        <img src="imgs/buyerfolio mockup.png" alt="Buyerfolio mockup">
+      </div>
+    </div>
+
+    <!-- DineSpot Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">DineSpot</h2>
+        <p class="project-role">UI/UX Designer & React Developer • Web Application</p>
+        <p class="project-description">A comprehensive tiffin and meal delivery management software helping 100+ businesses across 12 countries streamline operations. Features include route optimization (saving 30% on delivery costs), subscription management, automated billing, and real-time notifications. Contributed to React component development and UI/UX design for customer and driver interfaces.</p>
+        <div class="project-links">
+          <a href="project-dinespot.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      <div class="project-visual">
+        <img src="imgs/dinespotmockup.png" alt="DineSpot">
+      </div>
+    </div>
+
+    <!-- AAA Environmental Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">AAA Environmental</h2>
+        <p class="project-role">UI/UX, Web & Logo Designer • Web Application</p>
+        <p class="project-description">A specialized web application for environmental spill remediation services. Developed a user-centric interface that streamlines project management, data logging, and client communication for industrial environmental cleanup operations.</p>
+        <div class="project-links">
+          <a href="project-aaa.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      <div class="project-visual">
+        <img src="imgs/aaa mockup.png" alt="AAA Environmental mockup">
+      </div>
+    </div>
+
+    <!-- Bitebook Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Bitebook</h2>
+        <p class="project-role">UI/UX, Product & Logo Designer • Mobile Application</p>
+        <p class="project-description">Your culinary companion app that transforms recipe discovery into an enjoyable experience. Designed an intuitive platform where users can explore recipes, save favorites, and organize their personal cookbook all in one delightful app.</p>
+        <div class="project-links">
+          <a href="project-bitebook.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      <div class="project-visual">
+        <img src="imgs/bitebook mockup.png" alt="Bitebook mockup">
+      </div>
+    </div>
+
+    <!-- Cozys Towing Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Cozy Towing</h2>
+        <p class="project-role">UI/UX Designer & Front-End Developer • Responsive Website</p>
+        <p class="project-description">A professional storage and moving solutions website designed to provide a seamless user experience. Built with modern design principles and responsive web development to help customers easily discover services, book storage, and get in touch with the team.</p>
+        <div class="project-links">
+          <a href="project-cozystowing.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      <div class="project-visual">
+        <img src="imgs/cozy mockup.png" alt="Cozy Towing">
+      </div>
+    </div>
+
+        <!-- Fitnest X Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Fitnest X</h2>
+        <p class="project-role">UI/UX Designer • Mobile & Web App</p>
+        <p class="project-description">A fitness tracking application designed to motivate users on their wellness journey. Built an engaging experience with workout logging, progress visualization, and community features to help users stay committed to their fitness goals.</p>
+        <div class="project-links">
+          <a href="project-fitnestx.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      <div class="project-visual">
+        <img src="imgs/fitnestx mockup.png" alt="Fitnest X mockup">
+      </div>
+    </div>
+
+    <!-- Chatham Towing Project 
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Chatham Towing</h2>
+        <p class="project-role">UI/UX, Web & Logo Designer</p>
+        <p class="project-description">A modern, mobile-first website for a professional towing service. Designed to showcase services, enable quick booking, and build customer trust through clear information architecture and intuitive navigation.</p>
+        <div class="project-links">
+          <a href="project-chathamtowing.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      <div class="project-visual">
+        <img src="imgs/chatham mockup.png" alt="Chatham Towing mockup">
+      </div>
+    </div>-->
   
-	  
   </div>
 </section>
 
@@ -148,9 +244,9 @@
   <div class="footer-container">
     <div class="footer-links">
       <br> 
-      <a href="projects.html">Projects</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="contactme.html">Contact Me</a>
+      <a href="projects.html">Work</a>
+      <a href="aboutme.html">About</a>
+      <a href="contactme.html">Contact</a>
       <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
     </div>
     <div class="footer-social">

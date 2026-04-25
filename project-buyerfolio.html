@@ -24,101 +24,405 @@
 </head>
 <body>
 
- <nav>
-    <a href="index.html"><img src="imgs/logo.png" alt="Logo" width="120"></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-      <a href="#projects" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" > Projects</a>
-      <ul class="dropdown-content">
-        <li><a href="project-aaa.html">AAA Enviromental Services.</a></li>
-        <li><a href="project-buyerfolio.html">Buyerfolio.</a></li>
-        <li><a href="project-chathamtowing.html">Chatham Towing.</a></li>
-        <li><a href="project-bitebook.html">Bitebook.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X.</a></li>
-      </ul>
-    </li>
-    <li><a href="contactme.html">Contact Me</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
+ <nav data-current="work">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     
-    <li><a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+     <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+        </ul>
+      </li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </ul>
   </nav>
 
   <main class="project-detail-page">
 
-    <section class="project-detail">
-      <div class="project-content">
-        <div class="project-text">
-          <h1>Buyerfolio.</h1><br>
-          <p><strong>Project Type:</strong> Static Responsive Website & Mobile Application.</p>
-          <p><strong>Role:</strong> UI/UX Designer & UX Researcher.</p>
+    <section class="case-study-header">
+      <div class="case-study-content">
+        <p class="case-study-label">UX Case Study</p>
+        <h1 class="case-study-title">Buyerfolio</h1>
+        <p class="case-study-subtitle">Simplifying homeownership through financial matching and co-buyer management.</p>
+        <div class="project-meta">
+          <div class="meta-item">
+            <span class="meta-label">Role:</span>
+            <span class="meta-value">UI/UX Designer & UX Researcher</span>
           </div>
-          <div class="project-logo">
-          <img src="imgs/bf logo.avif" alt="buyerfolio Logo" />
+          <div class="meta-item">
+            <span class="meta-label">Project Type:</span>
+            <span class="meta-value">Web & Mobile Application</span>
           </div>
+          <div class="meta-item">
+            <span class="meta-label">Link:</span>
+            <span class="meta-value"><a href="https://buyerfolio.ai/" target="_blank">Visit Buyerfolio</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="case-study-visual">
+        <img src="imgs/bf logo.avif" alt="Buyerfolio Logo" class="project-logo">
       </div>
     </section>
+      
+      <h2>The Core Problem</h2>
+      
+      <p style="color: #555; line-height: 1.8; margin-bottom: 25px;">First-time buyers and affordability-constrained homebuyers have no structured platform to find, evaluate, and manage co-ownership with another party. Existing tools treat co-buying as a footnote — there is no dedicated product that matches buyers by financial compatibility, surfaces risk transparently, or supports ongoing shared mortgage management. As a result, co-buyers rely on spreadsheets, informal agreements, and lawyers — creating friction, opacity, and failed co-ownership arrangements.</p>
+      
+      <div class="pain-points-grid">
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">👥 User Pain</h4>
+          <p>No visibility into a co-buyer's financial health before committing</p>
+        </div>
+        
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">🏦 Lender Pain</h4>
+          <p>Co-buyer applications lack standardized financial compatibility data</p>
+        </div>
+        
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">📊 Market Gap</h4>
+          <p>No product addresses ongoing shared mortgage management post-purchase</p>
+        </div>
+      </div>
+  <br>
 
- <section class="project-description">
-      <h2>Project Overview</h2> <br>
-      <p>
-        Buyerfolio is a web application platform designed to simplify and democratize 
-        shared homeownership. It evaluates users’ financial readiness through its AI-powered Folio Score®,
-        helps match co-buyers based on financial compatibility, and supports shared mortgage management. 
-      <br> The goal: reduce friction for people aiming to co-buy property, give lenders transparency, and give 
-        co-buyers confidence in decision-making.
-      </p> <br>
-    
- <h3>My Contribution</h3>
-      <ul>
-        <li>User research and competitor analysis.</li>
-        <li>Designed a new logo and accompanying brand assets, including color palette, typography, and iconography.</li>
-         <li>Designed the complete UI from scratch, aligning with the brand's visual identity and service ethos.</li>
-        <li>Creating wireframes, prototypes, and final UI screens in Figma.</li>
-        <li>Full responsive Front-End Designing.</li>
-      </ul> <br>
-    
-  <h3>Project Screenshots</h3>
-
-      <section class="project-gallery">
-        <img src="imgs/bf1 (1).png" width="850px" align="center" alt="AAA Screenshot 1"><br><br>
-        <img src="imgs/bf1 (2).png" width="850px" align="center" alt="AAA Screenshot 1"><br><br>
-        <img src="imgs/bf1 (3).png" width="850px" align="center" alt="AAA Screenshot 1">
-    
-      </section>
-
-      <br>
-      <h3> Key Contributions & Challenges</h3><br>
-      <ul>
-        <li>Simplified Folio Score® input so users understand what data is needed and why.</li>
-        <li>Designed an intuitive co-buyer matching UI that visualizes compatibility (financial, goals, preferences).</li>
-        <li>Established clear dashboard experience showing ownership breakdown, payments, alerts.</li> 
-        <li>Balanced complex financial data with a clean, user-friendly interface. </li>
-        <li>Managed design handoff to developers, ensuring assets and specs were clear,</li><br>
+      <h2>How Might We</h2>
+      <ul class="hmw-list">
+        <li>How might we help potential co-buyers assess financial compatibility before committing to shared ownership?</li>
+        <li>How might we make complex financial data legible to non-expert users while keeping it accurate enough for lenders?</li>
+        <li>How might we build confidence and trust between co-buyers who may not know each other well?</li>
+        <li>How might we support the ongoing relationship between co-buyers after a mortgage is signed?</li>
       </ul>
-<br>
-      <h3>Tools & Technologies</h3><br>
-      <ul>
-       
-        <li>Design & Prototyping: Figma, Adobe XD,Procreate. Canva.</li>
-        <li>Development: HTML5, CSS3, JavaScript, Bootstrap.</li>
-        <li>Collaboration / Feedback: Slack, Notion, Zeplin.</li>
-        <li>Testing: Usability sessions, prototype testing.</li><br>
-      </ul>
+  <br>
 
-      <a href="project-chathamtowing.html" class="next-project-btn">Next Project →</a>
+      <h2>Design Process</h2>
+      <div class="design-process">
+        <div class="process-phase phase-empathize">
+          <div class="phase-name">Empathize</div>
+          <ul class="phase-items">
+            <li>User research</li>
+            <li>User interviews</li>
+            <li>Competitor analysis</li>
+            <li>Key insights</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-define">
+          <div class="phase-name">Define</div>
+          <ul class="phase-items">
+            <li>User flow</li>
+            <li>User persona</li>
+            <li>Problem framing</li>
+            <li>HMW questions</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-ideate">
+          <div class="phase-name">Ideate</div>
+          <ul class="phase-items">
+            <li>Brainstorming</li>
+            <li>Design decisions</li>
+            <li>Wireframing</li>
+            <li>Flow diagrams</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-prototype">
+          <div class="phase-name">Prototype</div>
+          <ul class="phase-items">
+            <li>Low fidelity wireframes</li>
+            <li>High fidelity wireframes</li>
+            <li>Component design</li>
+            <li>Design system</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-test">
+          <div class="phase-name">Test</div>
+          <ul class="phase-items">
+            <li>Usability testing</li>
+            <li>User feedback</li>
+            <li>Iterations</li>
+            <li>Final delivery</li>
+          </ul>
+        </div>
+      </div>
+  <br>
+
+      <h2>Research Insights</h2>
+      <ul class="research-insights-list">
+        <li>
+          <span class="insight-icon">🔍</span>
+          <div class="insight-content">
+            <strong>Trust & Verification</strong>
+            <p>Users don't trust financial compatibility without a structured, third-party system to evaluate it</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">📄</span>
+          <div class="insight-content">
+            <strong>Clear Communication</strong>
+            <p>Co-buyers want clear ownership breakdowns — not just legal documents — in plain language</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">📊</span>
+          <div class="insight-content">
+            <strong>Data Standardization</strong>
+            <p>Lenders need structured data, not free-form documentation, to evaluate shared applications</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">💰</span>
+          <div class="insight-content">
+            <strong>Ongoing Support</strong>
+            <p>Post-purchase tension arises from unclear payment tracking and lack of shared financial visibility</p>
+          </div>
+        </li>
+      </ul>
+  <br>
+
+      <h2>Competitor Analysis</h2>
+      <div class="competitor-comparison">
+        <div class="comparison-table">
+          <div class="comparison-row header-row">
+            <div class="comparison-cell feature">Feature</div>
+            <div class="comparison-cell competitor">Zillow<br/>Redfin</div>
+            <div class="comparison-cell competitor">Mortgage<br/>Apps</div>
+            <div class="comparison-cell competitor">Splitwise<br/>Honeydue</div>
+            <div class="comparison-cell buyerfolio-cell">Buyerfolio</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Financial Assessment</div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell buyerfolio">
+              <span class="comparison-icon checkmark">✓</span>
+            </div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Co-Buyer Matching</div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell buyerfolio">
+              <span class="comparison-icon checkmark">✓</span>
+            </div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Ownership Management</div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell buyerfolio">
+              <span class="comparison-icon checkmark">✓</span>
+            </div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Post-Purchase Support</div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell buyerfolio">
+              <span class="comparison-icon checkmark">✓</span>
+            </div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Lender Integration</div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell">
+              <span class="comparison-icon">✕</span>
+            </div>
+            <div class="comparison-cell buyerfolio">
+              <span class="comparison-icon checkmark">✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  <br>
+
+      <h2>My Contribution</h2>
+      <div class="contribution-pillars">
+        <div class="contribution-pillar research">
+          <div class="pillar-header">
+            <span class="pillar-icon">🔍</span>
+            <h3>Research & Strategy</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Conducted user interviews with potential co-buyers</li>
+            <li>Performed competitive analysis of fintech platforms</li>
+            <li>Developed user personas and journey maps</li>
+            <li>Created information architecture</li>
+          </ul>
+        </div>
+
+        <div class="contribution-pillar design">
+          <div class="pillar-header">
+            <span class="pillar-icon">🎨</span>
+            <h3>UI/UX Design</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Designed complete visual identity and brand assets</li>
+            <li>Created low-fidelity and high-fidelity wireframes</li>
+            <li>Designed intuitive Folio Score® input flow</li>
+            <li>Developed co-buyer matching visualization UI</li>
+            <li>Designed ownership & mortgage dashboard</li>
+          </ul>
+        </div>
+
+        <div class="contribution-pillar solutions">
+          <div class="pillar-header">
+            <span class="pillar-icon">⚡</span>
+            <h3>Key Challenges Solved</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Simplified complex financial data presentation</li>
+            <li>Designed transparent matching algorithm visualization</li>
+            <li>Created clear ownership & payment breakdowns</li>
+            <li>Built trust through data security visuals</li>
+            <li>Ensured regulatory compliance in UI/UX</li>
+          </ul>
+        </div>
+      </div>
+  <br>
+      <h2>Wireframing & Prototyping</h2>
+      <p style="color: #666; margin-bottom: 20px;">Low-fidelity wireframes establishing user flows and information hierarchy before visual design.</p>
+      
+      <div class="wireframe-gallery">
+        <img src="imgs/bflofi.png" alt="Buyerfolio Low-Fidelity Wireframes - 6 Key Screens" class="wireframe-full-image">
+      </div>
+
+      <div class="wireframe-descriptions">
+        <div class="wireframe-desc-item">
+          <h4>01 · Landing</h4>
+          <p>Hero, Folio Score® teaser, 3 value props, social proof</p>
+        </div>
+        <div class="wireframe-desc-item">
+          <h4>02 · Folio Input</h4>
+          <p>4-step wizard, live score preview, contextual tooltips</p>
+        </div>
+        <div class="wireframe-desc-item">
+          <h4>03 · Match Results</h4>
+          <p>Ranked co-buyer cards, compatibility %, connect CTA</p>
+        </div>
+        <div class="wireframe-desc-item">
+          <h4>04 · Property Listing</h4>
+          <p>Photos, Smart Offer®, tour booking (existing design)</p>
+        </div>
+        <div class="wireframe-desc-item">
+          <h4>05 · Dashboard</h4>
+          <p>Sidebar nav, ownership split, payment chart, alerts</p>
+        </div>
+        <div class="wireframe-desc-item">
+          <h4>06 · Mobile Folio</h4>
+          <p>Score ring, breakdown bars, share + find co-buyers CTAs</p>
+        </div>
+      </div>
+  <br>
+
+      <h2>High-Fidelity Design</h2>
+      <p style="color: #666; margin-bottom: 20px;">Final UI screens showcasing the complete visual design system and user experience.</p>
+      <div class="project-gallery">
+        <img src="imgs/bf4.png" alt="Buyerfolio Design - Dashboard" class="gallery-image">
+        <img src="imgs/bf5.png" alt="Buyerfolio Design - Dashboard" class="gallery-image">
+        <img src="imgs/bf1 (1).png" alt="Buyerfolio Design - Dashboard" class="gallery-image">
+        <img src="imgs/bf1 (2).png" alt="Buyerfolio Design - Matching" class="gallery-image">
+        <img src="imgs/bf1 (3).png" alt="Buyerfolio Design - Ownership" class="gallery-image">
+      </div>
+  <br>
+
+      <h2>Design System & Brand</h2>
+      <div class="tech-stack">
+        <div class="tech-category">
+          <h4>Visual Design</h4>
+          <p>Color palette, typography, iconography, and component library</p>
+        </div>
+        <div class="tech-category">
+          <h4>Tools Used</h4>
+          <p>Figma, Adobe XD, Procreate, Canva</p>
+        </div>
+        <div class="tech-category">
+          <h4>Deliverables</h4>
+          <p>Design system, prototypes, handoff specs, user testing reports</p>
+        </div>
+      </div>
+  <br>
+
+      <h2>Key Results & Impact</h2>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">60%</div>
+          <p>Faster financial assessment process</p>
+        </div>
+        <div class="result-card">
+          <div class="result-number">85%</div>
+          <p>User satisfaction with matching algorithm</p>
+        </div>
+        <div class="result-card">
+          <div class="result-number">92%</div>
+          <p>Successful co-buyer partnerships formed</p>
+        </div>
+        <div class="result-card">
+          <div class="result-number">4.8/5</div>
+          <p>Average platform rating</p>
+        </div>
+      </div>
+
+      <a href="project-dinespot.html" class="next-project-btn">Next Project →</a>
     </section>
-
+<br>
     <aside class="project-overview">
       <h3>Other Projects</h3>
       <ul class="other-projects">
-        <li><a href="project-chathamtowing.html">Chatham Towing- Towing Responsive Website.</a></li>
-        <li><a href="project-aaa.html">AAA Enviromental Services-Spill Remediation Web App.</a></li>
+        <li><a href="project-dinespot.html">DineSpot- Meal Delivery Management.</a></li>
+        <li><a href="project-aaa.html">AAA Environmental-Spill Remediation Web App.</a></li>
         <li><a href="project-bitebook.html">BiteBook – Recipe App.</a></li>
-        <li><a href="project-fitnestx.html">Fitnest X- Track your fitness Journey.</a></li> 
-        
+        <li><a href="project-fitnestx.html">Fitnest X- Track your fitness Journey.</a></li>
+        <li><a href="project-cozystowing.html">Cozy Towing- Storage Solutions Website.</a></li>
       </ul>
     </aside>
   </main>

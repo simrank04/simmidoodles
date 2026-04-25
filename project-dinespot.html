@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>simmidoodles</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Main CSS File -->
+  <link href="styles.css" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  
+    <!-- SVG Favicon -->
+      <link rel="icon" href="imgs/logo.png" type="image/png">
+
+</head>
+<body>
+
+  <nav data-current="work">
+    <a href="index.html">
+      <img src="imgs/logo.png" alt="logo" width="40">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    
+    <ul class="nav-links">
+      <button class="nav-close" aria-label="Close menu">✕</button> 
+      <li class="work-dropdown">
+        <a href="index.html#projects" class="work-link">Work</a>
+         <ul class="dropdown-menu">
+          <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
+          <li><a href="project-dinespot.html">DineSpot</a></li>
+          <li><a href="project-aaa.html">AAA Environmental</a></li>
+          <li><a href="project-fitnestx.html">Fitnest X</a></li>
+          <li><a href="project-bitebook.html">Bitebook</a></li>
+          <li><a href="project-cozystowing.html">Cozy Towing</a></li>
+        </ul>
+      </li>
+      <a href="aboutme.html" data-nav="about">About</a>
+      <a href="contactme.html" data-nav="contact">Contact</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </ul>
+  </nav>
+  
+
+  <main class="project-detail-page">
+
+    <section class="case-study-header">
+      <div class="case-study-content">
+        <p class="case-study-label">UX Case Study</p>
+        <h1 class="case-study-title">DineSpot</h1>
+        <p class="case-study-subtitle">Meal Delivery & Tiffin Management Platform</p>
+        <div class="project-meta">
+          <div class="meta-item">
+            <span class="meta-label">Role:</span>
+            <span class="meta-value">UI/UX Designer & React Developer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Project Type:</span>
+            <span class="meta-value">Web Application</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Link:</span>
+            <span class="meta-value"><a href="https://www.dinespot.io/" target="_blank">Visit DineSpot</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="case-study-visual">
+        <img src="imgs/dinespotlogo.png" alt="DineSpot Logo" class="project-logo">
+      </div>
+    </section>
+
+<section class="project-description">
+      <h2>Project Overview</h2>
+      
+      <div class="overview-section">
+        <div class="overview-item">
+          <div class="overview-icon">📦</div>
+          <div class="overview-content">
+            <h3>The Product</h3>
+            <p>DineSpot is a comprehensive meal delivery and tiffin management software transforming how food businesses operate. The platform serves 100+ tiffin and meal delivery businesses across Canada, Australia, America, UK, and India, processing 25K+ optimized deliveries daily with 90% customer satisfaction.</p>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <div class="overview-icon">⚠️</div>
+          <div class="overview-content">
+            <h3>The Problem</h3>
+            <p>Food delivery businesses faced significant operational challenges including inefficient delivery routes, manual order management, inconsistent subscription tracking, and poor real-time visibility. These pain points led to high delivery costs, missed deliveries, and customer dissatisfaction.</p>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <div class="overview-icon">💡</div>
+          <div class="overview-content">
+            <h3>The Solution</h3>
+            <p>Designed and developed an intuitive platform featuring intelligent route optimization (saving 30% on delivery costs), automated subscription management, real-time order tracking, and automated billing with WhatsApp/SMS notifications. The solution achieves 95% on-time delivery performance.</p>
+          </div>
+        </div>
+      </div>
+  <br>
+
+      <h2>The Core Problem</h2>
+      <p style="color: #555; line-height: 1.8; margin-bottom: 25px;">The meal delivery and tiffin subscription industry in South Asia and diaspora markets lacks modern operational software. Businesses rely on fragmented tools — WhatsApp for orders, Google Sheets for billing, multiple GPS apps for routing — creating inefficiencies, data silos, and poor customer experiences. This manual infrastructure limits business scalability, increases operational costs, and prevents real-time visibility into deliveries.</p>
+      
+      <div class="pain-points-grid">
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">👨‍💼 Operator Pain</h4>
+          <p>Manual order tracking, inefficient routes, inconsistent billing, and no real-time visibility into deliveries — all leading to high operational costs and customer frustration</p>
+        </div>
+        
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">🚗 Driver Pain</h4>
+          <p>No intuitive interface for route optimization, delivery tracking, or customer communication — making deliveries slower, more error-prone, and less satisfying</p>
+        </div>
+        
+        <div class="pain-point-item">
+          <h4 style="color: #a32ed1; margin-bottom: 10px;">👤 Customer Pain</h4>
+          <p>No centralized platform to manage subscriptions, track orders in real-time, communicate preferences, or receive timely notifications about delivery status</p>
+        </div>
+      </div>
+  <br>
+
+      <h2>How Might We</h2>
+      <ul class="hmw-list">
+        <li>How might we consolidate fragmented meal delivery operations into a single, intuitive platform?</li>
+        <li>How might we reduce delivery costs through intelligent route optimization and automation?</li>
+        <li>How might we build trust in subscription models through transparent tracking and reliable billing?</li>
+        <li>How might we create a seamless experience for operators, drivers, and customers across multiple devices and regions?</li>
+      </ul>
+  <br>
+
+      <h2>Design Process</h2>
+      <div class="design-process">
+        <div class="process-phase phase-empathize">
+          <div class="phase-name">Empathize</div>
+          <ul class="phase-items">
+            <li>Operator interviews</li>
+            <li>Driver research</li>
+            <li>Customer feedback</li>
+            <li>Market analysis</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-define">
+          <div class="phase-name">Define</div>
+          <ul class="phase-items">
+            <li>User personas</li>
+            <li>Journey mapping</li>
+            <li>Business requirements</li>
+            <li>HMW questions</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-ideate">
+          <div class="phase-name">Ideate</div>
+          <ul class="phase-items">
+            <li>Feature prioritization</li>
+            <li>Dashboard design</li>
+            <li>Workflow design</li>
+            <li>Integration strategy</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-prototype">
+          <div class="phase-name">Prototype</div>
+          <ul class="phase-items">
+            <li>Wireframing</li>
+            <li>High-fidelity mockups</li>
+            <li>Interactive prototypes</li>
+            <li>React components</li>
+          </ul>
+        </div>
+        <div class="process-phase phase-test">
+          <div class="phase-name">Test</div>
+          <ul class="phase-items">
+            <li>Usability testing</li>
+            <li>User feedback</li>
+            <li>Performance testing</li>
+            <li>Launch & iterate</li>
+          </ul>
+        </div>
+      </div>
+  <br>
+
+      <h2>Research Insights</h2>
+      <ul class="research-insights-list">
+        <li>
+          <span class="insight-icon">⏱️</span>
+          <div class="insight-content">
+            <strong>Speed & Efficiency Matter Most</strong>
+            <p>Operators prioritize operational efficiency above all — even small improvements in routing or order processing significantly impact profitability. Every minute of saved delivery time translates to more deliveries and revenue.</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">📲</span>
+          <div class="insight-content">
+            <strong>Multi-Device Ecosystem</strong>
+            <p>Operators manage operations on web/desktop, drivers work on mobile, and customers interact via mobile/web. Platform must provide seamless experiences across all contexts with synchronized data.</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">💳</span>
+          <div class="insight-content">
+            <strong>Subscription Trust is Critical</strong>
+            <p>Recurring billing models require extreme transparency. Customers must understand charges clearly; even small billing confusion destroys trust and leads to churn.</p>
+          </div>
+        </li>
+        <li>
+          <span class="insight-icon">🌍</span>
+          <div class="insight-content">
+            <strong>Localization & Integration</strong>
+            <p>Businesses operate across multiple countries with different payment methods, languages, and regulations. Platform must support local payment gateways, SMS providers, and currencies seamlessly.</p>
+          </div>
+        </li>
+      </ul>
+  <br>
+
+      <h2>Competitor Analysis</h2>
+      <div class="competitor-comparison">
+        <div class="comparison-table">
+          <div class="comparison-row header-row">
+            <div class="comparison-cell feature">Feature</div>
+            <div class="comparison-cell competitor">Generic Route<br/>Apps</div>
+            <div class="comparison-cell competitor">Food Delivery<br/>Platforms</div>
+            <div class="comparison-cell competitor">Basic TMS<br/>Software</div>
+            <div class="comparison-cell buyerfolio-cell">DineSpot</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Route Optimization</div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Subscription Management</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Automated Billing</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Real-Time Customer Notifications</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Operator Analytics & Insights</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-cell feature">Multi-Region Support</div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✓</span></div>
+            <div class="comparison-cell"><span class="comparison-icon">✕</span></div>
+            <div class="comparison-cell buyerfolio"><span class="comparison-icon checkmark">✓</span></div>
+          </div>
+        </div>
+      </div>
+  <br>
+
+
+   <h2>Design System & Brand</h2>
+      <div class="tech-stack">
+        <div class="tech-category">
+          <h4>Visual Design</h4>
+          <p>Warm, inviting color palette reflecting food industry, clear typography for data readability, intuitive iconography for multi-device contexts, responsive grid system</p>
+        </div>
+        <div class="tech-category">
+          <h4>Design Tools & Prototyping</h4>
+          <p>Figma design system, Adobe XD prototypes, interactive user flows, component library for development handoff</p>
+        </div>
+        <div class="tech-category">
+          <h4>Deliverables</h4>
+          <p>Complete design system, high-fidelity mockups, interactive prototypes, developer specifications, usability testing reports</p>
+        </div>
+      </div>
+  <br>
+
+      <h2>High-Fidelity Design</h2>
+      <p style="color: #666; margin-bottom: 20px;">Final UI screens showcasing the complete visual design system and user experience.</p>
+
+      <div class="project-gallery">
+        
+        <div class="gallery-pair">
+          <img src="imgs/dsmockup4.png" alt="DineSpot Mockup 4" class="gallery-image">
+          <img src="imgs/dsmockup5.png" alt="DineSpot Mockup 5" class="gallery-image">
+        </div>
+        <img src="imgs/dsmockup.png" alt="DineSpot Mockup 1" class="gallery-image">
+        <img src="imgs/dsmockup1.png" alt="DineSpot Mockup 2" class="gallery-image">
+        <img src="imgs/dsmockup2.png" alt="DineSpot Mockup 3" class="gallery-image">
+        
+      </div>
+  <br>
+
+      <h2>My Contribution</h2>
+      <div class="contribution-pillars">
+        <div class="contribution-pillar research">
+          <div class="pillar-header">
+            <span class="pillar-icon">🔍</span>
+            <h3>Research & Strategy</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Conducted interviews with meal delivery operators and drivers</li>
+            <li>Analyzed market gaps in tiffin delivery software</li>
+            <li>Developed operator, driver, and customer personas</li>
+            <li>Created user journey maps and pain point analysis</li>
+          </ul>
+        </div>
+
+        <div class="contribution-pillar design">
+          <div class="pillar-header">
+            <span class="pillar-icon">🎨</span>
+            <h3>UI/UX Design</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Designed intuitive operator dashboard for order management</li>
+            <li>Created route optimization and visualization interface</li>
+            <li>Designed driver app with real-time tracking and notifications</li>
+            <li>Built subscription and billing management UI</li>
+          </ul>
+        </div>
+
+        <div class="contribution-pillar solutions">
+          <div class="pillar-header">
+            <span class="pillar-icon">⚡</span>
+            <h3>Key Challenges Solved</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Simplified complex route optimization into intuitive visualization</li>
+            <li>Designed transparent subscription billing to build customer trust</li>
+            <li>Created seamless multi-region payment integration UI</li>
+            <li>Built automated notification system that scales across markets</li>
+            <li>Optimized React components for real-time data performance</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Key Results & Impact</h2>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">100+</div>
+          <p>Active businesses using the platform</p>
+        </div>
+        <div class="result-card">
+          <div class="result-number">25K+</div>
+          <p>Optimized deliveries processed daily</p>
+        </div>
+        <div class="result-card">
+          <div class="result-number">30%</div>
+          <p>Cost savings on delivery routes</p>
+        </div>
+        <div class="result-card">
+          <div class="result-number">95%</div>
+          <p>On-time delivery performance</p>
+        </div>
+        <div class="result-card">
+          <div class="result-number">90%</div>
+          <p>Customer satisfaction rating</p>
+        </div>
+      </div>
+
+      <a href="project-fitnestx.html" class="next-project-btn">Next Project →</a>
+    </section>
+
+    <aside class="project-overview">
+      <h3>Other Projects</h3>
+      <ul class="other-projects">
+        <li><a href="project-buyerfolio.html">Buyerfolio- Homebuyers and Lenders Web/Mobile App.</a></li>
+        <li><a href="project-aaa.html">AAA Environmental-Spill Remediation Web App.</a></li>
+        <li><a href="project-fitnestx.html">Fitnest X- Track your fitness Journey.</a></li>
+        <li><a href="project-bitebook.html">BiteBook – Recipe App.</a></li>
+        <li><a href="project-cozystowing.html">Cozy Towing- Storage Solutions Website.</a></li>
+      </ul>
+    </aside>
+    
+  </main>
+
+<!--Footer-->
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <br> 
+      <a href="index.html#projects">Projects</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="contactme.html">Contact Me</a>
+      <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
+    </div>
+    <div class="footer-social">
+      <h3>Let's get Connected</h3>
+      <br>
+      <a href="https://www.behance.net/simrankaur92" target="_blank" aria-label="Behance">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/simran-kaur04/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:simranpreet094@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 <strong>simmidoodles</strong>. All rights reserved.</p>
+</footer>
+
+<!-- backToTop -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
