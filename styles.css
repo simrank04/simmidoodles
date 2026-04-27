@@ -526,7 +526,7 @@ nav[data-current="work"] .work-link {
 
 .hero-text {
   flex: 1 1 350px;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 700;
   max-width: 700px;
   position: relative;
