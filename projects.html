@@ -24,7 +24,7 @@
 </head>
 <body>
 
-  <nav data-current="about">
+  <nav data-current="work">
     <a href="index.html">
       <img src="imgs/logo.png" alt="logo" width="40">
     </a>
@@ -34,7 +34,7 @@
     <ul class="nav-links">
       <button class="nav-close" aria-label="Close menu">✕</button> 
       <li class="work-dropdown">
-        <a href="index.html#projects" class="work-link">Work</a>
+        <a href="projects.html" class="work-link">Work</u></a>
         <ul class="dropdown-menu">
           <li><a href="project-buyerfolio.html">Buyerfolio</a></li>
           <li><a href="project-dinespot.html">DineSpot</a></li>
@@ -45,109 +45,123 @@
         </ul>
       </li>
       <a href="aboutme.html" data-nav="about">About</a>
-      <a href="contactme.html" data-nav="contact">Contact</a>
       <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
     </ul>
   </nav>
 
-<main class="about-section">
-    <div class="about-hero">
-      <div class="about-intro">
-        <h1>About Me</h1>
-        <h2>Hi! I'm Simran </h2>
-        <p>A Toronto-based UI/UX & Front-End Designer, self-taught artist, and lover of all things creative. I turn ideas into digital experiences that look good, feel right, and get results.</p>
-      </div>
-    </div>
+<main class="projects">
+  <h1 class="section-title">Work</h1>
 
-    <div class="about-highlights">
-      <div class="highlight-card">
-        <div class="highlight-icon">💡</div>
-        <h3>Design with Impact</h3>
-        <p>5+ years crafting intuitive, user-friendly interfaces that actually work and look amazing.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">🎨</div>
-        <h3>Creativity Meets Code</h3>
-        <p>Figma, Adobe Suite, Canva, HTML, CSS, JavaScript, React.js, Vue.js—I make it all shine.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">🚀</div>
-        <h3>Big-Picture Thinker</h3>
-        <p>From Design Thinking to performance optimization and SEO, creating experiences users love.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">🌅</div>
-        <h3>Creative Spirit</h3>
-        <p>Painting, photography, chasing sunsets, and hanging out with my dog fuel my creativity.</p>
-      </div>
-    </div>
+  <div class="projects-container">
+    
+    <!-- Buyerfolio Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Buyerfolio</h2>
+        <br><p class="project-role">UI/UX Designer • Web & Mobile App</p>
+        <p class="project-description">A comprehensive homebuying platform designed to simplify the journey for first-time homebuyers. Created an intuitive interface that helps users research properties, compare financing options, and track mortgage progress in one centralized dashboard.</p>
 
-    <div class="about-skills">
-      <h2>My Skillset</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h4>Design</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">UI/UX Design</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Adobe XD</span>
-            <span class="skill-tag">Illustrator</span>
-            <span class="skill-tag">Photoshop</span>
-            <span class="skill-tag">Canva</span>
-          </div>
+        <div class="project-visual">
+        <img src="imgs/buyerfolio mockup.png" alt="Buyerfolio mockup">
+      </div>
+        <div class="project-links">
+          <a href="project-buyerfolio.html" class="project-link">View Case Study</a>
         </div>
+      </div>
+      
+    </div>
+
+    <!-- DineSpot Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">DineSpot</h2>
+        <p class="project-role">UI/UX Designer & React Developer • Web Application</p>
+        <p class="project-description">A comprehensive tiffin and meal delivery management software helping 100+ businesses across 12 countries streamline operations. Features include route optimization (saving 30% on delivery costs), subscription management, automated billing, and real-time notifications. Contributed to React component development and UI/UX design for customer and driver interfaces.</p>
+        <div class="project-visual">
+        <img src="imgs/dinespotmockup.png" alt="DineSpot">
+      </div>
+        <div class="project-links">
+          <a href="project-dinespot.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- AAA Environmental Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">AAA Environmental</h2>
+        <p class="project-role">UI/UX, Web & Logo Designer • Web Application</p>
+        <p class="project-description">A specialized web application for environmental spill remediation services. Developed a user-centric interface that streamlines project management, data logging, and client communication for industrial environmental cleanup operations.</p>
         
-        <div class="skill-category">
-          <h4>Development</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">HTML/CSS</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React.js</span>
-            <span class="skill-tag">Vue.js</span>
-            <span class="skill-tag">Responsive Design</span>
-          </div>
-        </div>
-        
-        <div class="skill-category">
-          <h4>Strategy</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">Design Thinking</span>
-            <span class="skill-tag">User Research</span>
-            <span class="skill-tag">Prototyping</span>
-            <span class="skill-tag">SEO</span>
-            <span class="skill-tag">Performance</span>
-          </div>
+        <div class="project-visual">
+        <img src="imgs/aaa mockup.png" alt="AAA Environmental mockup">
+      </div>
+      <div class="project-links">
+          <a href="project-aaa.html" class="project-link">View Case Study</a>
         </div>
       </div>
+      
     </div>
 
-    <div class="about-cta">
-      <h2>Let's Create Together</h2>
-      <p>I'm always excited to work on new projects and collaborate with creative minds. Let's connect!</p>
-      <div class="footer-social">
-        <a href="https://www.behance.net/simrankaur92" target="_blank" aria-label="Behance">
-          <i class="fab fa-behance"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/simran-kaur04/" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="mailto:simranpreet094@gmail.com" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+    <!-- Bitebook Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Bitebook</h2>
+        <p class="project-role">UI/UX, Product & Logo Designer • Mobile Application</p>
+        <p class="project-description">Your culinary companion app that transforms recipe discovery into an enjoyable experience. Designed an intuitive platform where users can explore recipes, save favorites, and organize their personal cookbook all in one delightful app.</p>
+        <div class="project-visual">
+        <img src="imgs/bitebook mockup.png" alt="Bitebook mockup">
       </div>
+        <div class="project-links">
+          <a href="project-bitebook.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      
     </div>
+
+    <!-- Cozys Towing Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Cozy Towing</h2>
+        <p class="project-role">UI/UX Designer & Front-End Developer • Responsive Website</p>
+        <p class="project-description">A professional storage and moving solutions website designed to provide a seamless user experience. Built with modern design principles and responsive web development to help customers easily discover services, book storage, and get in touch with the team.</p>
+        <div class="project-visual">
+        <img src="imgs/cozy mockup.png" alt="Cozy Towing">
+      </div>
+        <div class="project-links">
+          <a href="project-cozystowing.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Fitnest X Project -->
+    <div class="project">
+      <div class="project-content">
+        <h2 class="project-title">Fitnest X</h2>
+        <p class="project-role">UI/UX Designer • Mobile & Web App</p>
+        <p class="project-description">A fitness tracking application designed to motivate users on their wellness journey. Built an engaging experience with workout logging, progress visualization, and community features to help users stay committed to their fitness goals.</p>
+        <div class="project-visual">
+        <img src="imgs/fitnestx mockup.png" alt="Fitnest X mockup">
+      </div>
+        <div class="project-links">
+          <a href="project-fitnestx.html" class="project-link">View Case Study</a>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
 </main>
 
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-links">
       <br> 
-      <a href="index.html#projects">Projects</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="#contact">Contact Me</a>
+      <a href="projects.html">Work</a>
+      <a href="aboutme.html">About</a>
+      <a href="contactme.html">Contact</a>
       <a href="Resume-Simran Kaur.pdf" target="_blank">Resume</a>
     </div>
     <div class="footer-social">

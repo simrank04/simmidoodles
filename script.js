@@ -166,10 +166,11 @@ function setupMobileWorkDropdown({ breakpoint = 700 } = {}) {
   if (!workDropdown || !workLink || !dropdownMenu) return;
 
   workLink.addEventListener("click", (e) => {
-    // Only toggle on mobile
+    // On desktop, toggle dropdown on hover (handled by CSS)
+    // On mobile, allow navigation to Work page
     if (window.innerWidth < breakpoint) {
-      e.preventDefault();
-      workDropdown.classList.toggle("active");
+      // Allow default navigation to projects.html
+      // Don't prevent default
     }
   });
 
