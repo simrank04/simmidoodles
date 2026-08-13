@@ -2,8 +2,8 @@
    Typed text animation
 --------------------------- */
 const phrases = [
-  "an UI/UX Designer.",
-  "an Front-End Developer.",
+  "a UI/UX Designer.",
+  "a Front-End Developer.",
   "a Dog Lover.",
   "an Artist."
 ];
